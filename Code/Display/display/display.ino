@@ -2,10 +2,14 @@
 #include "Adafruit_GFX.h"
 #include "Adafruit_HX8357.h"
 
+// cs  6 5
+// dc  5 8
+// rst 9 9
+
 // Anything else, defaults!
-#define TFT_CS    9
-#define TFT_DC   10
-#define TFT_RST  11
+#define TFT_CS    5 
+#define TFT_DC    6 
+#define TFT_RST   9 
 
 //0123456789012345
 //BBBBBGGGGGGRRRRR
