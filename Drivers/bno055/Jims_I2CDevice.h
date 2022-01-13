@@ -1,25 +1,17 @@
 #ifndef Jims_I2CDevice_h
 #define Jims_I2CDevice_h
 
-#include <stdint.h>
 #include <cstddef>
-#include <sys/ioctl.h>
-#include <asm/ioctl.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <linux/i2c-dev.h>
 #include <chrono>
 #include <thread>
 #include <iostream>
 #include <memory.h>
 #include <unistd.h>
-#include <errno.h>
-#include <sys/ioctl.h>
-#include <asm/ioctl.h>
 #include <stdio.h>
 #include <fcntl.h>
+#include <sys/ioctl.h>
+#include <asm/ioctl.h>
 #include <linux/i2c-dev.h>
-
 
 ///< The class which defines how we will talk to this device over I2C
 class Jims_I2CDevice {
