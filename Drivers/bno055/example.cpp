@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include "Adafruit_Sensor.h"
 #include "Jims_BNO055.h"
-#include "utility/imumaths.h"
 #include <chrono>
 #include <thread>
 
@@ -35,13 +33,12 @@ int main(void)
   printf("Current Temperature: %d C\nn",temp);
 
   bno.setExtCrystalUse(true);
-  sleep_for(milliseconds(400));
+  sleep_for(milliseconds(500));
 
-  for(int i=0;i<500;i++)
+  for(int i=0;i<100;i++)
   {
-    printf("%d Heading: %f Z: %f\n",i,bno.getHeading(),bno.getGyroZ());
+    printf("%d Heading: %f Z: %f %d\n",i,bno.getHeading(),bno.getGyroZ(),bno.isFullyCalibrated());
   }
-
 
   while(true)
   {
@@ -65,44 +62,7 @@ int main(void)
       heading,gyroZ,headingAvg/100.0,gyroZAvg/100.0);
   }
 
-  while(true)
-  {
-    // Possible vector values can be:
-    // - VECTOR_ACCELEROMETER - m/s^2
-    // - VECTOR_MAGNETOMETER  - uT
-    // - VECTOR_GYROSCOPE     - rad/s
-    // - VECTOR_EULER         - degrees
-    // - VECTOR_LINEARACCEL   - m/s^2
-    // - VECTOR_GRAVITY       - m/s^2
-//      imu::Vector<3> euler = bno.getVector(Jims_BNO055::VECTOR_EULER);
-    imu::Vector<3> euler = bno.getVector(Jims_BNO055::VECTOR_GYROSCOPE);
-//    imu::Vector<3> euler = bno.getVector(Jims_BNO055::VECTOR_MAGNETOMETER);
 
-    /* Display the floating point data */
-    printf("X: %f Y: %f Z: %f\t\t",euler.x(),euler.y(),euler.z());
-
-    /*
-    // Quaternion data
-    imu::Quaternion quat = bno.getQuat();
-    Serial.print("qW: ");
-    Serial.print(quat.w(), 4);
-    Serial.print(" qX: ");
-    Serial.print(quat.x(), 4);
-    Serial.print(" qY: ");
-    Serial.print(quat.y(), 4);
-    Serial.print(" qZ: ");
-    Serial.print(quat.z(), 4);
-    Serial.print("\t\t");
-    */
-
-    /* Display calibration status for each sensor. */
-    uint8_t system, gyro, accel, mag = 0;
-    bno.getCalibration(&system, &gyro, &accel, &mag);
-    printf("CALIBRATION: Sys= %d  Gyro= %d Accel=%d Mag=%d\n",system,gyro,accel,mag);
-
-    sleep_for(milliseconds(BNO055_SAMPLERATE_DELAY_MS));
-    }
-
-    return 0;
+  return 0;
 }
 
