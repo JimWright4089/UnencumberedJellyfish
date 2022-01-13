@@ -23,7 +23,6 @@
 #define __JIMS_BNO055_H__
 
 #include "Jims_I2CDevice.h"
-#include "Adafruit_Sensor.h"
 
 /** BNO055 Address A **/
 #define BNO055_ADDRESS_A (0x28)
