@@ -1,0 +1,10 @@
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/install/strip.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/install/local.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/edit_cache.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/test.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/hardware_comm.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/install.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/list_install_components.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/hardware_comm_uninstall.dir
+/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/uninstall.dir

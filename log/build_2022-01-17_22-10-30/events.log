@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000978] (drive_base) JobQueued: {'identifier': 'drive_base', 'dependencies': OrderedDict()}
+[0.001295] (hardware_comm) JobQueued: {'identifier': 'hardware_comm', 'dependencies': OrderedDict()}
+[0.002149] (drive_base) JobStarted: {'identifier': 'drive_base'}
+[0.034127] (hardware_comm) JobStarted: {'identifier': 'hardware_comm'}
+[0.060750] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'cmake'}
+[0.063425] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'build'}
+[0.066051] (drive_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/UnencumberedJellyfish/build/drive_base', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/drive_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.088941] (hardware_comm) JobProgress: {'identifier': 'hardware_comm', 'progress': 'cmake'}
+[0.092364] (hardware_comm) JobProgress: {'identifier': 'hardware_comm', 'progress': 'build'}
+[0.093517] (hardware_comm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.104791] (-) TimerEvent: {}
+[0.206479] (-) TimerEvent: {}
+[0.228940] (drive_base) CommandEnded: {'returncode': 0}
+[0.275876] (hardware_comm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target hardware_comm\x1b[0m\n'}
+[0.306640] (-) TimerEvent: {}
+[0.312673] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'install'}
+[0.349897] (drive_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/drive_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.387754] (drive_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.388575] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/package_run_dependencies/drive_base\n'}
+[0.389121] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/parent_prefix_path/drive_base\n'}
+[0.389706] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/ament_prefix_path.sh\n'}
+[0.390332] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/ament_prefix_path.dsv\n'}
+[0.390819] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/path.sh\n'}
+[0.391324] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/path.dsv\n'}
+[0.391875] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.bash\n'}
+[0.392383] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.sh\n'}
+[0.392842] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.zsh\n'}
+[0.393245] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.dsv\n'}
+[0.393643] (drive_base) StdoutLine: {'line': b'-- Installing: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/package.dsv\n'}
+[0.394274] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/packages/drive_base\n'}
+[0.394855] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/cmake/drive_baseConfig.cmake\n'}
+[0.395438] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/cmake/drive_baseConfig-version.cmake\n'}
+[0.395890] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/package.xml\n'}
+[0.400955] (drive_base) CommandEnded: {'returncode': 0}
+[0.406918] (-) TimerEvent: {}
+[0.415717] (hardware_comm) StderrLine: {'line': b"make[2]: *** No rule to make target '/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp', needed by 'CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o'.  Stop.\n"}
+[0.416833] (hardware_comm) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[0.446217] (hardware_comm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o\x1b[0m\n'}
+[0.507236] (-) TimerEvent: {}
+[0.582788] (drive_base) JobEnded: {'identifier': 'drive_base', 'rc': 0}
+[0.607346] (-) TimerEvent: {}
+[0.708022] (-) TimerEvent: {}
+[0.808866] (-) TimerEvent: {}
+[0.909585] (-) TimerEvent: {}
+[1.010342] (-) TimerEvent: {}
+[1.111025] (-) TimerEvent: {}
+[1.211802] (-) TimerEvent: {}
+[1.312612] (-) TimerEvent: {}
+[1.413340] (-) TimerEvent: {}
+[1.514117] (-) TimerEvent: {}
+[1.614838] (-) TimerEvent: {}
+[1.715602] (-) TimerEvent: {}
+[1.816319] (-) TimerEvent: {}
+[1.917031] (-) TimerEvent: {}
+[2.017719] (-) TimerEvent: {}
+[2.118496] (-) TimerEvent: {}
+[2.219223] (-) TimerEvent: {}
+[2.319937] (-) TimerEvent: {}
+[2.420649] (-) TimerEvent: {}
+[2.521374] (-) TimerEvent: {}
+[2.622116] (-) TimerEvent: {}
+[2.722815] (-) TimerEvent: {}
+[2.823598] (-) TimerEvent: {}
+[2.924420] (-) TimerEvent: {}
+[3.025116] (-) TimerEvent: {}
+[3.125876] (-) TimerEvent: {}
+[3.226590] (-) TimerEvent: {}
+[3.327301] (-) TimerEvent: {}
+[3.428015] (-) TimerEvent: {}
+[3.528725] (-) TimerEvent: {}
+[3.629448] (-) TimerEvent: {}
+[3.730195] (-) TimerEvent: {}
+[3.830903] (-) TimerEvent: {}
+[3.931630] (-) TimerEvent: {}
+[4.032328] (-) TimerEvent: {}
+[4.133040] (-) TimerEvent: {}
+[4.233744] (-) TimerEvent: {}
+[4.334500] (-) TimerEvent: {}
+[4.435199] (-) TimerEvent: {}
+[4.535929] (-) TimerEvent: {}
+[4.636641] (-) TimerEvent: {}
+[4.737346] (-) TimerEvent: {}
+[4.838095] (-) TimerEvent: {}
+[4.938925] (-) TimerEvent: {}
+[5.039632] (-) TimerEvent: {}
+[5.140357] (-) TimerEvent: {}
+[5.241055] (-) TimerEvent: {}
+[5.341764] (-) TimerEvent: {}
+[5.442541] (-) TimerEvent: {}
+[5.543328] (-) TimerEvent: {}
+[5.644046] (-) TimerEvent: {}
+[5.744729] (-) TimerEvent: {}
+[5.845454] (-) TimerEvent: {}
+[5.942505] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KHardwareComm::HardwareComm()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.943192] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:14:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.943664] (hardware_comm) StderrLine: {'line': b'   14 |   if(!\x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.begin())\n'}
+[5.944107] (hardware_comm) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.945633] (-) TimerEvent: {}
+[5.950254] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:23:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.950864] (hardware_comm) StderrLine: {'line': b'   23 |   int8_t temp = \x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.getTemp();\n'}
+[5.951277] (hardware_comm) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.953049] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HardwareComm::timerCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.953908] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:34:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct std_msgs::msg::Header_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kseq\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.954536] (hardware_comm) StderrLine: {'line': b'   34 |   message.header.\x1b[01;31m\x1b[Kseq\x1b[m\x1b[K = mCount;\n'}
+[5.955346] (hardware_comm) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.958490] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:38:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.959109] (hardware_comm) StderrLine: {'line': b'   38 |   imu::Quaternion quat = \x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.getQuat();\n'}
+[5.959554] (hardware_comm) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.045853] (-) TimerEvent: {}
+[6.146592] (-) TimerEvent: {}
+[6.247324] (-) TimerEvent: {}
+[6.348048] (-) TimerEvent: {}
+[6.448779] (-) TimerEvent: {}
+[6.549522] (-) TimerEvent: {}
+[6.650271] (-) TimerEvent: {}
+[6.750981] (-) TimerEvent: {}
+[6.851703] (-) TimerEvent: {}
+[6.952405] (-) TimerEvent: {}
+[7.053112] (-) TimerEvent: {}
+[7.153851] (-) TimerEvent: {}
+[7.254575] (-) TimerEvent: {}
+[7.355283] (-) TimerEvent: {}
+[7.456121] (-) TimerEvent: {}
+[7.557333] (-) TimerEvent: {}
+[7.658063] (-) TimerEvent: {}
+[7.758770] (-) TimerEvent: {}
+[7.859484] (-) TimerEvent: {}
+[7.960192] (-) TimerEvent: {}
+[8.060944] (-) TimerEvent: {}
+[8.161675] (-) TimerEvent: {}
+[8.262454] (-) TimerEvent: {}
+[8.363177] (-) TimerEvent: {}
+[8.463902] (-) TimerEvent: {}
+[8.564612] (-) TimerEvent: {}
+[8.665323] (-) TimerEvent: {}
+[8.766060] (-) TimerEvent: {}
+[8.866818] (-) TimerEvent: {}
+[8.967543] (-) TimerEvent: {}
+[9.068413] (-) TimerEvent: {}
+[9.089274] (hardware_comm) StderrLine: {'line': b'make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1\n'}
+[9.090120] (hardware_comm) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2\n'}
+[9.090852] (hardware_comm) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[9.096204] (hardware_comm) CommandEnded: {'returncode': 2}
+[9.168615] (-) TimerEvent: {}
+[9.233068] (hardware_comm) JobEnded: {'identifier': 'hardware_comm', 'rc': 2}
+[9.244733] (-) EventReactorShutdown: {}

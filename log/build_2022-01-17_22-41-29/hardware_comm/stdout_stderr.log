@@ -1,0 +1,53 @@
+[35m[1mScanning dependencies of target hardware_comm[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:31:39:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   31 |   rclcpp::Publisher<sensor_msgs::msg::[01;31m[KJoy[m[K>::SharedPtr m_joy;
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:31:39:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:31:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |   rclcpp::Publisher<sensor_msgs::msg::Joy[01;31m[K>[m[K::SharedPtr m_joy;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:31:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   31 |   rclcpp::Publisher<sensor_msgs::msg::Joy>::[01;31m[KSharedPtr[m[K m_joy;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                      [32m[K;[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:31:55:[m[K [01;31m[Kerror: [m[K‘[01m[Km_joy[m[K’ does not name a type
+   31 |   rclcpp::Publisher<sensor_msgs::msg::Joy>::SharedPtr [01;31m[Km_joy[m[K;
+      |                                                       [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In constructor ‘[01m[KHardwareComm::HardwareComm()[m[K’:
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:3:[m[K [01;31m[Kerror: [m[K‘[01m[Km_joy[m[K’ was not declared in this scope
+   10 |   [01;31m[Km_joy[m[K = this->create_publisher<sensor_msgs::msg::Joy>("DriverStation/joy", 10);
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:52:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   10 |   m_joy = this->create_publisher<sensor_msgs::msg::[01;31m[KJoy[m[K>("DriverStation/joy", 10);
+      |                                                    [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:52:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KHardwareComm::create_publisher<<expression error> >(const char [18], int)[m[K’
+   10 |   m_joy = this->create_publisher<sensor_msgs::msg::Joy>("DriverStation/joy", 10[01;31m[K)[m[K;
+      |                                                                                [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9[m[K,
+                 from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   10 |   m_joy = this->create_publisher<sensor_msgs::msg::Joy>("DriverStation/joy", 10[01;31m[K)[m[K;
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In member function ‘[01m[Kvoid HardwareComm::timerCallback()[m[K’:
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:58:21:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   58 |   sensor_msgs::msg::[01;31m[KJoy[m[K joy_msg;
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:59:3:[m[K [01;31m[Kerror: [m[K‘[01m[Km_joy[m[K’ was not declared in this scope
+   59 |   [01;31m[Km_joy[m[K->publish(joy_msg);
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:59:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoy_msg[m[K’ was not declared in this scope
+   59 |   m_joy->publish([01;31m[Kjoy_msg[m[K);
+      |                  [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

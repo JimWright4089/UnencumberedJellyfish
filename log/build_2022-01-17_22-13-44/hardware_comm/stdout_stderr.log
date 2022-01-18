@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target hardware_comm[0m
+make[2]: *** No rule to make target '/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp', needed by 'CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o'.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+[ 20%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

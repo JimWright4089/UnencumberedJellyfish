@@ -1,0 +1,37 @@
+[0.067s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/UnencumberedJellyfish/Code/hardware_comm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/hardware_comm
+[0.124s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.233s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.967s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.107s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.121s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.601s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.799s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.805s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.375s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.830s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.094s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.105s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.106s] -- Configured cppcheck include dirs: 
+[3.106s] -- Configured cppcheck exclude dirs and/or files: 
+[3.116s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.117s] -- Configured cpplint exclude dirs and/or files: 
+[3.121s] -- Added test 'lint_cmake' to check CMake code style
+[3.133s] -- Added test 'uncrustify' to check C / C++ code style
+[3.133s] -- Configured uncrustify additional arguments: 
+[3.136s] -- Added test 'xmllint' to check XML markup files
+[3.155s] -- Configuring done
+[3.159s] CMake Error at CMakeLists.txt:25 (add_executable):
+[3.160s]   Cannot find source file:
+[3.160s] 
+[3.161s]     hardware_comm.cpp
+[3.161s] 
+[3.161s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[3.162s]   .hpp .hxx .in .txx
+[3.162s] 
+[3.163s] 
+[3.163s] CMake Error at CMakeLists.txt:25 (add_executable):
+[3.164s]   No SOURCES given to target: hardware_comm
+[3.165s] 
+[3.165s] 
+[3.166s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[3.177s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/UnencumberedJellyfish/Code/hardware_comm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/hardware_comm

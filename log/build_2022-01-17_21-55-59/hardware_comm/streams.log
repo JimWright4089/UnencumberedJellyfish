@@ -1,0 +1,156 @@
+[0.069s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[0.234s] [35m[1mScanning dependencies of target hardware_comm[0m
+[0.767s] [ 20%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[0.768s] [ 40%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o[0m
+[0.818s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:1[m[K:
+[0.819s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[0.819s]    80 |     [01;35m[K}[m[K;         ///< Struct for holding XYZ component
+[0.820s]       |     [01;35m[K^[m[K
+[0.820s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[0.821s]    92 |     [01;35m[K}[m[K;               ///< Struct for holding roll/pitch/heading
+[0.822s]       |     [01;35m[K^[m[K
+[0.823s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[0.824s]   108 |     [01;35m[K}[m[K;           ///< RGB data in floating point notation
+[0.825s]       |     [01;35m[K^[m[K
+[0.825s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:[m[K In member function ‘[01m[Kvoid Adafruit_Sensor::printSensorDetails()[m[K’:
+[0.826s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSerial[m[K’ was not declared in this scope
+[0.826s]    11 |   [01;31m[KSerial[m[K.println(F("------------------------------------"));
+[0.827s]       |   [01;31m[K^~~~~~[m[K
+[0.827s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:18:[m[K [01;31m[Kerror: [m[K‘[01m[KF[m[K’ was not declared in this scope
+[0.828s]    11 |   Serial.println([01;31m[KF[m[K("------------------------------------"));
+[0.828s]       |                  [01;31m[K^[m[K
+[0.831s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:102: CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o] Error 1
+[0.832s] make[2]: *** Waiting for unfinished jobs....
+[6.248s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/imumaths.h:27[m[K,
+[6.248s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:25[m[K,
+[6.249s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:11[m[K,
+[6.249s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.249s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/matrix.h:183:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[6.250s]   183 | }[01;35m[K;[m[K // namespace imu
+[6.250s]       |  [01;35m[K^[m[K
+[6.274s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:27[m[K,
+[6.275s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:11[m[K,
+[6.275s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.276s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[6.276s]    80 |     [01;35m[K}[m[K;         ///< Struct for holding XYZ component
+[6.276s]       |     [01;35m[K^[m[K
+[6.277s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[6.277s]    92 |     [01;35m[K}[m[K;               ///< Struct for holding roll/pitch/heading
+[6.277s]       |     [01;35m[K^[m[K
+[6.278s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[6.278s]   108 |     [01;35m[K}[m[K;           ///< RGB data in floating point notation
+[6.279s]       |     [01;35m[K^[m[K
+[6.281s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.281s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:22:20:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KMinimalPublisher[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.282s]    22 |   MinimalPublisher([01;31m[K)[m[K;
+[6.282s]       |                    [01;31m[K^[m[K
+[6.306s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:5:32:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KMinimalPublisher[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.307s]     5 | HardwareComm::MinimalPublisher([01;31m[K)[m[K
+[6.307s]       |                                [01;31m[K^[m[K
+[6.307s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In member function ‘[01m[Kint HardwareComm::MinimalPublisher()[m[K’:
+[6.308s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:6:5:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[6.308s]     6 |   : [01;31m[KNode[m[K("hardware_comm"), count_(0)
+[6.309s]       |     [01;31m[K^~~~[m[K
+[6.309s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:6:28:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KHardwareComm[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+[6.309s]     6 |   : Node("hardware_comm"), [01;31m[Kcount_[m[K(0)
+[6.310s]       |                            [01;31m[K^~~~~~[m[K
+[6.311s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:53:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalPublisher[m[K’ is not a class, namespace, or enumeration
+[6.311s]    10 |   mTimer = this->create_wall_timer(20ms, std::bind(&[01;31m[KMinimalPublisher[m[K::timerCallback, this));
+[6.312s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.316s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:13:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[6.316s]    13 |   if(![01;31m[Kbno[m[K.begin())
+[6.317s]       |       [01;31m[K^~~[m[K
+[6.320s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmilliseconds[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::chrono::milliseconds[m[K’?
+[6.321s]    19 |   sleep_for([01;31m[Kmilliseconds[m[K(1000));
+[6.322s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.323s]       |             [32m[Kstd::chrono::milliseconds[m[K
+[6.324s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:5[m[K,
+[6.325s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.325s] [01m[K/usr/include/c++/9/chrono:611:59:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::chrono::milliseconds[m[K’ declared here
+[6.326s]   611 |     typedef duration<_GLIBCXX_CHRONO_INT64_T, milli>      [01;36m[Kmilliseconds[m[K;
+[6.326s]       |                                                           [01;36m[K^~~~~~~~~~~~[m[K
+[6.327s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksleep_for[m[K’ was not declared in this scope
+[6.328s]    19 |   [01;31m[Ksleep_for[m[K(milliseconds(1000));
+[6.328s]       |   [01;31m[K^~~~~~~~~[m[K
+[6.329s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[6.329s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:36[m[K,
+[6.330s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[6.331s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[6.332s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[6.333s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[6.333s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[6.334s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[6.334s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[6.335s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[6.335s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[6.335s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9[m[K,
+[6.336s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.336s] [01m[K/opt/ros/foxy/include/rclcpp/utilities.hpp:215:1:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::sleep_for[m[K’
+[6.337s]   215 | [01;36m[Ksleep_for[m[K(
+[6.337s]       | [01;36m[K^~~~~~~~~[m[K
+[6.337s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[6.338s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[6.338s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[6.339s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9[m[K,
+[6.339s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[6.339s] [01m[K/usr/include/c++/9/thread:366:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::this_thread::sleep_for[m[K’
+[6.340s]   366 |       [01;36m[Ksleep_for[m[K(const chrono::duration<_Rep, _Period>& __rtime)
+[6.340s]       |       [01;36m[K^~~~~~~~~[m[K
+[6.340s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:22:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[6.341s]    22 |   int8_t temp = [01;31m[Kbno[m[K.getTemp();
+[6.341s]       |                 [01;31m[K^~~[m[K
+[6.342s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:27:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[6.342s]    27 | [01;35m[K}[m[K
+[6.342s]       | [01;35m[K^[m[K
+[6.343s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In member function ‘[01m[Kvoid HardwareComm::timerCallback()[m[K’:
+[6.343s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:33:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kseq[m[K’
+[6.344s]    33 |   message.header.[01;31m[Kseq[m[K = mCount;
+[6.344s]       |                  [01;31m[K^~~[m[K
+[6.344s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:37:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[6.345s]    37 |   imu::Quaternion quat = [01;31m[Kbno[m[K.getQuat();
+[6.345s]       |                          [01;31m[K^~~[m[K
+[7.796s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+[7.797s]                  from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+[7.797s]                  from [01m[K/usr/include/c++/9/memory:63[m[K,
+[7.797s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:6[m[K,
+[7.798s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[7.798s] /usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = HardwareComm; _Args = {}; _Tp = HardwareComm][m[K’:
+[7.799s] [01m[K/usr/include/c++/9/bits/alloc_traits.h:482:2:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = HardwareComm; _Args = {}; _Tp = HardwareComm; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<HardwareComm>][m[K’
+[7.799s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.800s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.800s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<HardwareComm>; _Args = {}; _Tp = HardwareComm; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.801s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<HardwareComm>; _Args = {}; _Tp = HardwareComm][m[K’
+[7.801s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; _Args = {}][m[K’
+[7.801s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = HardwareComm; _Args = {}][m[K’
+[7.802s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:59:47:[m[K   required from here
+[7.802s] [01m[K/usr/include/c++/9/ext/new_allocator.h:145:20:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KHardwareComm::HardwareComm()[m[K’
+[7.803s]   145 |  noexcept(noexcept([01;31m[K::new((void *)__p)[m[K
+[7.803s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.804s]   146 | [01;31m[K       _Up(std::forward<_Args>(__args)...)[m[K))
+[7.804s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.804s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[7.805s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[KHardwareComm::HardwareComm()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[7.805s]    19 | class [01;36m[KHardwareComm[m[K : public rclcpp::Node
+[7.806s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[7.806s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:19:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[7.806s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.807s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[7.807s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.808s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9[m[K,
+[7.808s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[7.808s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[7.809s]  1193 |   [01;36m[KNode[m[K(
+[7.809s]       |   [01;36m[K^~~~[m[K
+[7.810s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[7.810s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[7.811s]    98 |   explicit [01;36m[KNode[m[K(
+[7.811s]       |            [01;36m[K^~~~[m[K
+[7.811s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[7.812s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[7.812s]    86 |   explicit [01;36m[KNode[m[K(
+[7.813s]       |            [01;36m[K^~~~[m[K
+[7.813s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[9.307s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+[9.308s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+[9.309s] make: *** [Makefile:141: all] Error 2
+[9.315s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4

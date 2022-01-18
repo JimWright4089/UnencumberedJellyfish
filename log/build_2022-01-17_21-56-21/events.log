@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000960] (drive_base) JobQueued: {'identifier': 'drive_base', 'dependencies': OrderedDict()}
+[0.001277] (hardware_comm) JobQueued: {'identifier': 'hardware_comm', 'dependencies': OrderedDict()}
+[0.002069] (drive_base) JobStarted: {'identifier': 'drive_base'}
+[0.034448] (hardware_comm) JobStarted: {'identifier': 'hardware_comm'}
+[0.061608] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'cmake'}
+[0.064131] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'build'}
+[0.066602] (drive_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/UnencumberedJellyfish/build/drive_base', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/drive_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.089766] (hardware_comm) JobProgress: {'identifier': 'hardware_comm', 'progress': 'cmake'}
+[0.093073] (hardware_comm) JobProgress: {'identifier': 'hardware_comm', 'progress': 'build'}
+[0.094211] (hardware_comm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.105592] (-) TimerEvent: {}
+[0.208948] (-) TimerEvent: {}
+[0.229479] (drive_base) CommandEnded: {'returncode': 0}
+[0.309159] (-) TimerEvent: {}
+[0.315482] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'install'}
+[0.357443] (drive_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/drive_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.368490] (hardware_comm) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o\x1b[0m\n'}
+[0.369641] (hardware_comm) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o\x1b[0m\n'}
+[0.404553] (drive_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.405591] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/package_run_dependencies/drive_base\n'}
+[0.406189] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/parent_prefix_path/drive_base\n'}
+[0.406940] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/ament_prefix_path.sh\n'}
+[0.407567] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/ament_prefix_path.dsv\n'}
+[0.408476] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/path.sh\n'}
+[0.409118] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/path.dsv\n'}
+[0.409636] (-) TimerEvent: {}
+[0.410905] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.bash\n'}
+[0.412215] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.sh\n'}
+[0.413088] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.zsh\n'}
+[0.413834] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/local_setup.dsv\n'}
+[0.415169] (drive_base) StdoutLine: {'line': b'-- Installing: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/package.dsv\n'}
+[0.416533] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/packages/drive_base\n'}
+[0.417067] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/cmake/drive_baseConfig.cmake\n'}
+[0.417545] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/cmake/drive_baseConfig-version.cmake\n'}
+[0.418056] (drive_base) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/package.xml\n'}
+[0.418879] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:1\x1b[m\x1b[K:\n'}
+[0.419930] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[0.422478] (hardware_comm) StderrLine: {'line': b'   80 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;         ///< Struct for holding XYZ component\n'}
+[0.430972] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.431758] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[0.432534] (hardware_comm) StderrLine: {'line': b'   92 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;               ///< Struct for holding roll/pitch/heading\n'}
+[0.433280] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.433929] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[0.434498] (hardware_comm) StderrLine: {'line': b'  108 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;           ///< RGB data in floating point notation\n'}
+[0.434989] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.435630] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Adafruit_Sensor::printSensorDetails()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.436125] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSerial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.436846] (hardware_comm) StderrLine: {'line': b'   11 |   \x1b[01;31m\x1b[KSerial\x1b[m\x1b[K.println(F("------------------------------------"));\n'}
+[0.437296] (hardware_comm) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.437916] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KF\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.439187] (hardware_comm) StderrLine: {'line': b'   11 |   Serial.println(\x1b[01;31m\x1b[KF\x1b[m\x1b[K("------------------------------------"));\n'}
+[0.439973] (hardware_comm) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.440607] (drive_base) CommandEnded: {'returncode': 0}
+[0.442163] (hardware_comm) StderrLine: {'line': b'make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:102: CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o] Error 1\n'}
+[0.443022] (hardware_comm) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[0.509926] (-) TimerEvent: {}
+[0.610388] (drive_base) JobEnded: {'identifier': 'drive_base', 'rc': 0}
+[0.612060] (-) TimerEvent: {}
+[0.712608] (-) TimerEvent: {}
+[0.813311] (-) TimerEvent: {}
+[0.913998] (-) TimerEvent: {}
+[1.014727] (-) TimerEvent: {}
+[1.115494] (-) TimerEvent: {}
+[1.216236] (-) TimerEvent: {}
+[1.316959] (-) TimerEvent: {}
+[1.417671] (-) TimerEvent: {}
+[1.518387] (-) TimerEvent: {}
+[1.619306] (-) TimerEvent: {}
+[1.720027] (-) TimerEvent: {}
+[1.820742] (-) TimerEvent: {}
+[1.921445] (-) TimerEvent: {}
+[2.022142] (-) TimerEvent: {}
+[2.122903] (-) TimerEvent: {}
+[2.223596] (-) TimerEvent: {}
+[2.324356] (-) TimerEvent: {}
+[2.425066] (-) TimerEvent: {}
+[2.525793] (-) TimerEvent: {}
+[2.626516] (-) TimerEvent: {}
+[2.727239] (-) TimerEvent: {}
+[2.827984] (-) TimerEvent: {}
+[2.928704] (-) TimerEvent: {}
+[3.029428] (-) TimerEvent: {}
+[3.130123] (-) TimerEvent: {}
+[3.230815] (-) TimerEvent: {}
+[3.331526] (-) TimerEvent: {}
+[3.432289] (-) TimerEvent: {}
+[3.532975] (-) TimerEvent: {}
+[3.633685] (-) TimerEvent: {}
+[3.734396] (-) TimerEvent: {}
+[3.835126] (-) TimerEvent: {}
+[3.935849] (-) TimerEvent: {}
+[4.036610] (-) TimerEvent: {}
+[4.137312] (-) TimerEvent: {}
+[4.238030] (-) TimerEvent: {}
+[4.338739] (-) TimerEvent: {}
+[4.439446] (-) TimerEvent: {}
+[4.540213] (-) TimerEvent: {}
+[4.640923] (-) TimerEvent: {}
+[4.741641] (-) TimerEvent: {}
+[4.842340] (-) TimerEvent: {}
+[4.943029] (-) TimerEvent: {}
+[5.043763] (-) TimerEvent: {}
+[5.144514] (-) TimerEvent: {}
+[5.245234] (-) TimerEvent: {}
+[5.345953] (-) TimerEvent: {}
+[5.446674] (-) TimerEvent: {}
+[5.547383] (-) TimerEvent: {}
+[5.648165] (-) TimerEvent: {}
+[5.748844] (-) TimerEvent: {}
+[5.754732] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/imumaths.h:27\x1b[m\x1b[K,\n'}
+[5.755404] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:25\x1b[m\x1b[K,\n'}
+[5.755857] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:11\x1b[m\x1b[K,\n'}
+[5.756400] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.756827] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/matrix.h:183:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.757261] (hardware_comm) StderrLine: {'line': b'  183 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K // namespace imu\n'}
+[5.757649] (hardware_comm) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.781153] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:27\x1b[m\x1b[K,\n'}
+[5.781932] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:11\x1b[m\x1b[K,\n'}
+[5.782372] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.782794] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.783217] (hardware_comm) StderrLine: {'line': b'   80 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;         ///< Struct for holding XYZ component\n'}
+[5.783656] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.784102] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.784463] (hardware_comm) StderrLine: {'line': b'   92 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;               ///< Struct for holding roll/pitch/heading\n'}
+[5.784805] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.785153] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[5.785553] (hardware_comm) StderrLine: {'line': b'  108 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;           ///< RGB data in floating point notation\n'}
+[5.785916] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.787857] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.788553] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:22:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[5.789008] (hardware_comm) StderrLine: {'line': b'   22 |   MinimalPublisher(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.789407] (hardware_comm) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.812859] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:5:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[5.813689] (hardware_comm) StderrLine: {'line': b'    5 | HardwareComm::MinimalPublisher(\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[5.814139] (hardware_comm) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.814555] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint HardwareComm::MinimalPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.814978] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:6:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[5.815392] (hardware_comm) StderrLine: {'line': b'    6 |   : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("hardware_comm"), count_(0)\n'}
+[5.815791] (hardware_comm) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.816300] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:6:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KHardwareComm\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.816741] (hardware_comm) StderrLine: {'line': b'    6 |   : Node("hardware_comm"), \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K(0)\n'}
+[5.817151] (hardware_comm) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.817944] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:10:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[5.818704] (hardware_comm) StderrLine: {'line': b'   10 |   mTimer = this->create_wall_timer(20ms, std::bind(&\x1b[01;31m\x1b[KMinimalPublisher\x1b[m\x1b[K::timerCallback, this));\n'}
+[5.819281] (hardware_comm) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.823014] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:13:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.823608] (hardware_comm) StderrLine: {'line': b'   13 |   if(!\x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.begin())\n'}
+[5.824127] (hardware_comm) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.826677] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmilliseconds\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::milliseconds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.827569] (hardware_comm) StderrLine: {'line': b'   19 |   sleep_for(\x1b[01;31m\x1b[Kmilliseconds\x1b[m\x1b[K(1000));\n'}
+[5.828120] (hardware_comm) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.829379] (hardware_comm) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kstd::chrono::milliseconds\x1b[m\x1b[K\n'}
+[5.829958] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:5\x1b[m\x1b[K,\n'}
+[5.830558] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.831434] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:611:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::milliseconds\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.832384] (hardware_comm) StderrLine: {'line': b'  611 |     typedef duration<_GLIBCXX_CHRONO_INT64_T, milli>      \x1b[01;36m\x1b[Kmilliseconds\x1b[m\x1b[K;\n'}
+[5.833062] (hardware_comm) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.833615] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksleep_for\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.834145] (hardware_comm) StderrLine: {'line': b'   19 |   \x1b[01;31m\x1b[Ksleep_for\x1b[m\x1b[K(milliseconds(1000));\n'}
+[5.834744] (hardware_comm) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.835300] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:19:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.835760] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:36\x1b[m\x1b[K,\n'}
+[5.836647] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.837175] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.837751] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[5.838652] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.839568] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.840283] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[5.840846] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.841373] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.841958] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.842341] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9\x1b[m\x1b[K,\n'}
+[5.842725] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.843095] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/utilities.hpp:215:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::sleep_for\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.843460] (hardware_comm) StderrLine: {'line': b'  215 | \x1b[01;36m\x1b[Ksleep_for\x1b[m\x1b[K(\n'}
+[5.843841] (hardware_comm) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.844298] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/future:39\x1b[m\x1b[K,\n'}
+[5.844698] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[5.845097] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.845483] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9\x1b[m\x1b[K,\n'}
+[5.845874] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[5.846275] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/thread:366:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::this_thread::sleep_for\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.846651] (hardware_comm) StderrLine: {'line': b'  366 |       \x1b[01;36m\x1b[Ksleep_for\x1b[m\x1b[K(const chrono::duration<_Rep, _Period>& __rtime)\n'}
+[5.847022] (hardware_comm) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.847392] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:22:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.847747] (hardware_comm) StderrLine: {'line': b'   22 |   int8_t temp = \x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.getTemp();\n'}
+[5.848177] (hardware_comm) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.848566] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:27:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[5.848937] (-) TimerEvent: {}
+[5.849366] (hardware_comm) StderrLine: {'line': b'   27 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[5.849893] (hardware_comm) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[5.850313] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HardwareComm::timerCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.850734] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:33:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct std_msgs::msg::Header_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kseq\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.851130] (hardware_comm) StderrLine: {'line': b'   33 |   message.header.\x1b[01;31m\x1b[Kseq\x1b[m\x1b[K = mCount;\n'}
+[5.851494] (hardware_comm) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.851927] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:37:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbno\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.852372] (hardware_comm) StderrLine: {'line': b'   37 |   imu::Quaternion quat = \x1b[01;31m\x1b[Kbno\x1b[m\x1b[K.getQuat();\n'}
+[5.852761] (hardware_comm) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.949132] (-) TimerEvent: {}
+[6.049857] (-) TimerEvent: {}
+[6.150562] (-) TimerEvent: {}
+[6.251289] (-) TimerEvent: {}
+[6.352028] (-) TimerEvent: {}
+[6.452728] (-) TimerEvent: {}
+[6.553434] (-) TimerEvent: {}
+[6.654223] (-) TimerEvent: {}
+[6.754947] (-) TimerEvent: {}
+[6.855649] (-) TimerEvent: {}
+[6.956377] (-) TimerEvent: {}
+[7.057063] (-) TimerEvent: {}
+[7.157779] (-) TimerEvent: {}
+[7.258504] (-) TimerEvent: {}
+[7.299710] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[7.301042] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[7.301518] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:63\x1b[m\x1b[K,\n'}
+[7.301956] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:6\x1b[m\x1b[K,\n'}
+[7.302384] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[7.302805] (hardware_comm) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = HardwareComm; _Args = {}; _Tp = HardwareComm]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.303236] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:482:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = HardwareComm; _Args = {}; _Tp = HardwareComm; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<HardwareComm>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.303749] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.304385] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.304890] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<HardwareComm>; _Args = {}; _Tp = HardwareComm; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.305342] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<HardwareComm>; _Args = {}; _Tp = HardwareComm]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.305757] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = HardwareComm; _Alloc = std::allocator<HardwareComm>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.306176] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = HardwareComm; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.306611] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:59:47:\x1b[m\x1b[K   required from here\n'}
+[7.307036] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:145:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KHardwareComm::HardwareComm()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.307447] (hardware_comm) StderrLine: {'line': b'  145 |  noexcept(noexcept(\x1b[01;31m\x1b[K::new((void *)__p)\x1b[m\x1b[K\n'}
+[7.307850] (hardware_comm) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.308364] (hardware_comm) StderrLine: {'line': b'  146 | \x1b[01;31m\x1b[K       _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K))\n'}
+[7.308793] (hardware_comm) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.309188] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[7.309585] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:19:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHardwareComm::HardwareComm()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[7.309998] (hardware_comm) StderrLine: {'line': b'   19 | class \x1b[01;36m\x1b[KHardwareComm\x1b[m\x1b[K : public rclcpp::Node\n'}
+[7.310433] (hardware_comm) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.310850] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:19:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.311257] (hardware_comm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[7.311662] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[7.312128] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[7.312538] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:9\x1b[m\x1b[K,\n'}
+[7.312999] (hardware_comm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1\x1b[m\x1b[K:\n'}
+[7.313401] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.313806] (hardware_comm) StderrLine: {'line': b' 1193 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[7.314204] (hardware_comm) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.314595] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[7.314991] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.315390] (hardware_comm) StderrLine: {'line': b'   98 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[7.315782] (hardware_comm) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.316300] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[7.316725] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.317187] (hardware_comm) StderrLine: {'line': b'   86 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[7.317594] (hardware_comm) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.317990] (hardware_comm) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[7.358675] (-) TimerEvent: {}
+[7.459390] (-) TimerEvent: {}
+[7.560145] (-) TimerEvent: {}
+[7.660869] (-) TimerEvent: {}
+[7.761580] (-) TimerEvent: {}
+[7.862296] (-) TimerEvent: {}
+[7.963062] (-) TimerEvent: {}
+[8.063782] (-) TimerEvent: {}
+[8.164533] (-) TimerEvent: {}
+[8.265222] (-) TimerEvent: {}
+[8.365922] (-) TimerEvent: {}
+[8.466634] (-) TimerEvent: {}
+[8.567345] (-) TimerEvent: {}
+[8.668028] (-) TimerEvent: {}
+[8.768797] (-) TimerEvent: {}
+[8.807758] (hardware_comm) StderrLine: {'line': b'make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1\n'}
+[8.808594] (hardware_comm) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2\n'}
+[8.809343] (hardware_comm) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.814814] (hardware_comm) CommandEnded: {'returncode': 2}
+[8.869014] (-) TimerEvent: {}
+[8.954960] (hardware_comm) JobEnded: {'identifier': 'hardware_comm', 'rc': 2}
+[8.966643] (-) EventReactorShutdown: {}

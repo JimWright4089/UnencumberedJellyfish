@@ -1,0 +1,6 @@
+CMake Error at CMakeLists.txt:23 (set_property):
+  set_property could not find TARGET hardware_comm.  Perhaps it has not yet
+  been created.
+
+
+make: *** [Makefile:326: cmake_check_build_system] Error 1

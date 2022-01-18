@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.000962] (drive_base) JobQueued: {'identifier': 'drive_base', 'dependencies': OrderedDict()}
+[0.001326] (hardware_comm) JobQueued: {'identifier': 'hardware_comm', 'dependencies': OrderedDict()}
+[0.002124] (drive_base) JobStarted: {'identifier': 'drive_base'}
+[0.048562] (hardware_comm) JobStarted: {'identifier': 'hardware_comm'}
+[0.075723] (drive_base) JobProgress: {'identifier': 'drive_base', 'progress': 'cmake'}
+[0.076649] (drive_base) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/UnencumberedJellyfish/Code/drive_base', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/drive_base'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/drive_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/drive_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099088] (-) TimerEvent: {}
+[0.103978] (hardware_comm) JobProgress: {'identifier': 'hardware_comm', 'progress': 'cmake'}
+[0.104801] (hardware_comm) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/hardware_comm'], 'cwd': '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.143.65 48430 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.143.65 48430 192.168.143.50 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.199292] (-) TimerEvent: {}
+[0.300080] (-) TimerEvent: {}
+[0.400833] (-) TimerEvent: {}
+[0.501589] (-) TimerEvent: {}
+[0.602284] (-) TimerEvent: {}
+[0.702974] (-) TimerEvent: {}
+[0.803731] (-) TimerEvent: {}
+[0.904446] (-) TimerEvent: {}
+[1.005275] (-) TimerEvent: {}
+[1.106210] (-) TimerEvent: {}
+[1.207681] (-) TimerEvent: {}
+[1.271287] (hardware_comm) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[1.272024] (drive_base) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[1.307844] (-) TimerEvent: {}
+[1.408669] (-) TimerEvent: {}
+[1.509412] (-) TimerEvent: {}
+[1.610123] (-) TimerEvent: {}
+[1.710833] (-) TimerEvent: {}
+[1.811577] (-) TimerEvent: {}
+[1.912299] (-) TimerEvent: {}
+[2.013260] (-) TimerEvent: {}
+[2.082754] (hardware_comm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[2.083540] (drive_base) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[2.113408] (-) TimerEvent: {}
+[2.119862] (drive_base) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.120553] (hardware_comm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.213582] (-) TimerEvent: {}
+[2.314418] (-) TimerEvent: {}
+[2.415446] (-) TimerEvent: {}
+[2.455640] (drive_base) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.456251] (hardware_comm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.463201] (drive_base) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.463823] (hardware_comm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.515646] (-) TimerEvent: {}
+[2.616594] (-) TimerEvent: {}
+[2.717530] (-) TimerEvent: {}
+[2.777179] (hardware_comm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.777830] (drive_base) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.817625] (drive_base) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.818220] (-) TimerEvent: {}
+[2.818661] (hardware_comm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.820089] (drive_base) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.820661] (hardware_comm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.834146] (hardware_comm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.834737] (drive_base) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.918517] (-) TimerEvent: {}
+[3.019607] (-) TimerEvent: {}
+[3.120727] (-) TimerEvent: {}
+[3.221847] (-) TimerEvent: {}
+[3.228574] (hardware_comm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.229246] (drive_base) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.232656] (drive_base) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.233382] (hardware_comm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.322097] (-) TimerEvent: {}
+[3.423208] (-) TimerEvent: {}
+[3.524063] (-) TimerEvent: {}
+[3.585834] (drive_base) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.586605] (hardware_comm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.624221] (-) TimerEvent: {}
+[3.627585] (hardware_comm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.628430] (drive_base) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.629684] (drive_base) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.630321] (hardware_comm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.669570] (hardware_comm) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.670163] (drive_base) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.724529] (-) TimerEvent: {}
+[3.821132] (drive_base) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.821983] (hardware_comm) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.822401] (drive_base) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.822826] (hardware_comm) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.824616] (-) TimerEvent: {}
+[3.925356] (-) TimerEvent: {}
+[4.026143] (-) TimerEvent: {}
+[4.126941] (-) TimerEvent: {}
+[4.227700] (-) TimerEvent: {}
+[4.328359] (-) TimerEvent: {}
+[4.429107] (-) TimerEvent: {}
+[4.529787] (-) TimerEvent: {}
+[4.630543] (-) TimerEvent: {}
+[4.731254] (-) TimerEvent: {}
+[4.827371] (hardware_comm) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[4.828112] (hardware_comm) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'rclcpp' was not found\n"}
+[4.828466] (hardware_comm) StderrLine: {'line': b'  before\n'}
+[4.828772] (hardware_comm) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.829161] (hardware_comm) StderrLine: {'line': b'  CMakeLists.txt:25 (ament_target_dependencies)\n'}
+[4.829492] (hardware_comm) StderrLine: {'line': b'\n'}
+[4.829797] (hardware_comm) StderrLine: {'line': b'\n'}
+[4.831358] (-) TimerEvent: {}
+[4.832668] (hardware_comm) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.833319] (hardware_comm) StdoutLine: {'line': b'See also "/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles/CMakeOutput.log".\n'}
+[4.841971] (drive_base) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.845477] (hardware_comm) CommandEnded: {'returncode': 1}
+[4.932006] (-) TimerEvent: {}
+[4.964631] (hardware_comm) JobEnded: {'identifier': 'hardware_comm', 'rc': 1}
+[5.032128] (-) TimerEvent: {}
+[5.132781] (-) TimerEvent: {}
+[5.233460] (-) TimerEvent: {}
+[5.257174] (drive_base) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.264931] (drive_base) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.265671] (drive_base) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.266090] (drive_base) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.272542] (drive_base) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.273173] (drive_base) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.278327] (drive_base) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.286877] (drive_base) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.287460] (drive_base) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.290251] (drive_base) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.305995] (drive_base) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.315983] (drive_base) StdoutLine: {'line': b'-- Generating done\n'}
+[5.320128] (drive_base) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/UnencumberedJellyfish/build/drive_base\n'}
+[5.332354] (drive_base) JobEnded: {'identifier': 'drive_base', 'rc': 'SIGINT'}
+[5.333753] (-) TimerEvent: {}
+[5.343970] (-) EventReactorShutdown: {}

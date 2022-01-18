@@ -1,0 +1,18 @@
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Khardware_common.hpp: No such file or directory
+    1 | #include [01;31m[K"hardware_common.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Jims_I2CDevice.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KJims_I2CDevice.h: No such file or directory
+    1 | #include [01;31m[K"Jims_I2CDevice.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:89: CMakeFiles/hardware_comm.dir/src/bno055/Jims_I2CDevice.cpp.o] Error 1
+[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Jims_BNO055.cpp:32:10:[m[K [01;31m[Kfatal error: [m[KJims_BNO055.h: No such file or directory
+   32 | #include [01;31m[K"Jims_BNO055.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:76: CMakeFiles/hardware_comm.dir/src/bno055/Jims_BNO055.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

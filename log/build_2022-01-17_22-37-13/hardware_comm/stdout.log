@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target hardware_comm[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable hardware_comm[0m
+[100%] Built target hardware_comm
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/package_run_dependencies/hardware_comm
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/parent_prefix_path/hardware_comm
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/path.sh
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/path.dsv
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.bash
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.sh
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.zsh
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.dsv
+-- Installing: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/package.dsv
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/packages/hardware_comm
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/cmake/hardware_commConfig.cmake
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/cmake/hardware_commConfig-version.cmake
+-- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/package.xml

@@ -1,0 +1,23 @@
+[0.068s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[0.241s] [35m[1mScanning dependencies of target hardware_comm[0m
+[0.381s] make[2]: *** No rule to make target '/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp', needed by 'CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o'.  Stop.
+[0.382s] make[2]: *** Waiting for unfinished jobs....
+[0.412s] [ 20%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[5.907s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In constructor ‘[01m[KHardwareComm::HardwareComm()[m[K’:
+[5.908s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[5.908s]    14 |   if(![01;31m[Kbno[m[K.begin())
+[5.909s]       |       [01;31m[K^~~[m[K
+[5.915s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:23:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[5.916s]    23 |   int8_t temp = [01;31m[Kbno[m[K.getTemp();
+[5.916s]       |                 [01;31m[K^~~[m[K
+[5.918s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In member function ‘[01m[Kvoid HardwareComm::timerCallback()[m[K’:
+[5.919s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:34:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kseq[m[K’
+[5.919s]    34 |   message.header.[01;31m[Kseq[m[K = mCount;
+[5.920s]       |                  [01;31m[K^~~[m[K
+[5.923s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:38:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kbno[m[K’ was not declared in this scope
+[5.924s]    38 |   imu::Quaternion quat = [01;31m[Kbno[m[K.getQuat();
+[5.924s]       |                          [01;31m[K^~~[m[K
+[9.054s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+[9.055s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+[9.056s] make: *** [Makefile:141: all] Error 2
+[9.061s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4

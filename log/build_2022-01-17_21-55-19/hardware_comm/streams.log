@@ -1,0 +1,72 @@
+[0.068s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[0.183s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.294s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.015s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.159s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.173s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.680s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.870s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.876s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.447s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.900s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.165s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.177s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.178s] -- Configured cppcheck include dirs: /home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include;/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005
+[3.178s] -- Configured cppcheck exclude dirs and/or files: 
+[3.189s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.190s] -- Configured cpplint exclude dirs and/or files: 
+[3.195s] -- Added test 'lint_cmake' to check CMake code style
+[3.207s] -- Added test 'uncrustify' to check C / C++ code style
+[3.208s] -- Configured uncrustify additional arguments: 
+[3.210s] -- Added test 'xmllint' to check XML markup files
+[3.231s] -- Configuring done
+[3.264s] -- Generating done
+[3.271s] -- Build files have been written to: /home/ubuntu/UnencumberedJellyfish/build/hardware_comm
+[3.361s] [35m[1mScanning dependencies of target hardware_comm[0m
+[3.406s] [ 20%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[3.407s] [ 40%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/bno055/Jims_BNO055.cpp.o[0m
+[3.410s] [ 60%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o[0m
+[3.448s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Khardware_common.hpp: No such file or directory
+[3.449s]     1 | #include [01;31m[K"hardware_common.hpp"[m[K
+[3.450s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.450s] compilation terminated.
+[3.452s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+[3.453s] make[2]: *** Waiting for unfinished jobs....
+[3.464s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:1[m[K:
+[3.464s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[3.465s]    80 |     [01;35m[K}[m[K;         ///< Struct for holding XYZ component
+[3.465s]       |     [01;35m[K^[m[K
+[3.466s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[3.467s]    92 |     [01;35m[K}[m[K;               ///< Struct for holding roll/pitch/heading
+[3.468s]       |     [01;35m[K^[m[K
+[3.468s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[3.470s]   108 |     [01;35m[K}[m[K;           ///< RGB data in floating point notation
+[3.470s]       |     [01;35m[K^[m[K
+[3.471s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:[m[K In member function ‘[01m[Kvoid Adafruit_Sensor::printSensorDetails()[m[K’:
+[3.471s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSerial[m[K’ was not declared in this scope
+[3.472s]    11 |   [01;31m[KSerial[m[K.println(F("------------------------------------"));
+[3.472s]       |   [01;31m[K^~~~~~[m[K
+[3.473s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp:11:18:[m[K [01;31m[Kerror: [m[K‘[01m[KF[m[K’ was not declared in this scope
+[3.473s]    11 |   Serial.println([01;31m[KF[m[K("------------------------------------"));
+[3.474s]       |                  [01;31m[K^[m[K
+[3.476s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:102: CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o] Error 1
+[3.831s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/imumaths.h:27[m[K,
+[3.832s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:25[m[K,
+[3.832s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Jims_BNO055.cpp:32[m[K:
+[3.833s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/utility/matrix.h:183:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[3.833s]   183 | }[01;35m[K;[m[K // namespace imu
+[3.834s]       |  [01;35m[K^[m[K
+[4.921s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:27[m[K,
+[4.922s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Jims_BNO055.cpp:32[m[K:
+[4.922s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:80:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[4.923s]    80 |     [01;35m[K}[m[K;         ///< Struct for holding XYZ component
+[4.923s]       |     [01;35m[K^[m[K
+[4.923s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:92:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[4.924s]    92 |     [01;35m[K}[m[K;               ///< Struct for holding roll/pitch/heading
+[4.924s]       |     [01;35m[K^[m[K
+[4.924s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Adafruit_Sensor.h:108:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[4.925s]   108 |     [01;35m[K}[m[K;           ///< RGB data in floating point notation
+[4.925s]       |     [01;35m[K^[m[K
+[5.377s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+[5.377s] make: *** [Makefile:141: all] Error 2
+[5.383s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4

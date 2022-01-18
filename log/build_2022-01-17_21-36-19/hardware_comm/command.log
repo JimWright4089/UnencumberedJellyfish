@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/UnencumberedJellyfish/Code/hardware_comm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/hardware_comm
+Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/UnencumberedJellyfish/Code/hardware_comm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/hardware_comm

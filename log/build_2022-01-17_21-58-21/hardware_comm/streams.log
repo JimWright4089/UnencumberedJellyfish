@@ -1,0 +1,15 @@
+[0.069s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[0.241s] [35m[1mScanning dependencies of target hardware_comm[0m
+[0.375s] make[2]: *** No rule to make target '/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/bno055/Adafruit_Sensor.cpp', needed by 'CMakeFiles/hardware_comm.dir/src/bno055/Adafruit_Sensor.cpp.o'.  Stop.
+[0.377s] make[2]: *** Waiting for unfinished jobs....
+[0.407s] [ 20%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[0.912s] In file included from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/hardware_comm.hpp:11[m[K,
+[0.913s]                  from [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:1[m[K:
+[0.913s] [01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/include/bno005/Jims_BNO055.h:27:10:[m[K [01;31m[Kfatal error: [m[KAdafruit_Sensor.h: No such file or directory
+[0.914s]    27 | #include [01;31m[K"Adafruit_Sensor.h"[m[K
+[0.914s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.914s] compilation terminated.
+[0.919s] make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
+[0.919s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
+[0.920s] make: *** [Makefile:141: all] Error 2
+[0.926s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4

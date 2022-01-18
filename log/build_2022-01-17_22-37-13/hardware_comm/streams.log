@@ -1,0 +1,24 @@
+[0.068s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[0.244s] [35m[1mScanning dependencies of target hardware_comm[0m
+[0.409s] [ 25%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
+[8.795s] [ 50%] [32m[1mLinking CXX executable hardware_comm[0m
+[9.320s] [100%] Built target hardware_comm
+[9.359s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/UnencumberedJellyfish/build/hardware_comm -- -j4 -l4
+[9.476s] Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/UnencumberedJellyfish/build/hardware_comm
+[9.507s] -- Install configuration: ""
+[9.507s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/package_run_dependencies/hardware_comm
+[9.508s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/parent_prefix_path/hardware_comm
+[9.508s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/ament_prefix_path.sh
+[9.509s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/ament_prefix_path.dsv
+[9.509s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/path.sh
+[9.509s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/environment/path.dsv
+[9.510s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.bash
+[9.510s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.sh
+[9.511s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.zsh
+[9.511s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/local_setup.dsv
+[9.512s] -- Installing: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/package.dsv
+[9.513s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/ament_index/resource_index/packages/hardware_comm
+[9.513s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/cmake/hardware_commConfig.cmake
+[9.514s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/cmake/hardware_commConfig-version.cmake
+[9.514s] -- Up-to-date: /home/ubuntu/UnencumberedJellyfish/install/hardware_comm/share/hardware_comm/package.xml
+[9.524s] Invoked command in '/home/ubuntu/UnencumberedJellyfish/build/hardware_comm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/UnencumberedJellyfish/build/hardware_comm
