@@ -110,17 +110,16 @@ hardware_comm: CMakeFiles/hardware_comm.dir/src/bno055/Jims_BNO055.cpp.o
 hardware_comm: CMakeFiles/hardware_comm.dir/src/bno055/Jims_I2CDevice.cpp.o
 hardware_comm: CMakeFiles/hardware_comm.dir/build.make
 hardware_comm: /opt/ros/foxy/lib/librclcpp.so
+hardware_comm: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+hardware_comm: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
+hardware_comm: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+hardware_comm: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 hardware_comm: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 hardware_comm: /opt/ros/foxy/lib/librcl.so
 hardware_comm: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 hardware_comm: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
@@ -143,6 +142,18 @@ hardware_comm: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_generator_c.so
 hardware_comm: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 hardware_comm: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 hardware_comm: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+hardware_comm: /opt/ros/foxy/lib/libtracetools.so
+hardware_comm: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
+hardware_comm: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+hardware_comm: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+hardware_comm: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+hardware_comm: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+hardware_comm: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+hardware_comm: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 hardware_comm: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 hardware_comm: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 hardware_comm: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -155,7 +166,6 @@ hardware_comm: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 hardware_comm: /opt/ros/foxy/lib/librcpputils.so
 hardware_comm: /opt/ros/foxy/lib/librosidl_runtime_c.so
 hardware_comm: /opt/ros/foxy/lib/librcutils.so
-hardware_comm: /opt/ros/foxy/lib/libtracetools.so
 hardware_comm: CMakeFiles/hardware_comm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/UnencumberedJellyfish/build/hardware_comm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable hardware_comm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hardware_comm.dir/link.txt --verbose=$(VERBOSE)

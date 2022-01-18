@@ -30,7 +30,7 @@ find_package(sensor_msgs REQUIRED)
 add_executable(hardware_comm src/hardware_comm.cpp 
     src/bno055/Jims_BNO055.cpp 
     src/bno055/Jims_I2CDevice.cpp)
-ament_target_dependencies(hardware_comm rclcpp std_msgs)
+ament_target_dependencies(hardware_comm rclcpp std_msgs sensor_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -42,5 +42,9 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+install(TARGETS
+  hardware_comm
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

@@ -1,1 +1,0 @@
-Invoking command in '/home/ubuntu/UnencumberedJellyfish/build/drive_base': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/UnencumberedJellyfish/Code/drive_base -DCMAKE_INSTALL_PREFIX=/home/ubuntu/UnencumberedJellyfish/install/drive_base

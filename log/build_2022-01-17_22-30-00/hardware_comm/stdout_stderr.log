@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target hardware_comm[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o[0m
-[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:[m[K In member function ‘[01m[Kvoid HardwareComm::timerCallback()[m[K’:
-[01m[K/home/ubuntu/UnencumberedJellyfish/Code/hardware_comm/src/hardware_comm.cpp:31:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
-   31 |   auto message = sensor_msgs::msg::Imu[01;31m[K;[m[K
-      |                                       [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/hardware_comm.dir/build.make:63: CMakeFiles/hardware_comm.dir/src/hardware_comm.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/hardware_comm.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2
