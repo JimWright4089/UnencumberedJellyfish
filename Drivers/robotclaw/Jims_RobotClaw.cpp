@@ -79,6 +79,23 @@ int32_t Jims_RobotClaw::getRightSpeed()
   return getEncoder(CMD_READ_MOTOR1_SPEED)/SPEED_DIVISOR;
 }
 
+double Jims_RobotClaw::getLeftCurrent()
+{
+  uint32_t value = (uint32_t)getEncoder(CMD_READ_MOTORS_CURRENT);
+  uint16_t currentInt = (value&0xFFFF);
+
+  return (double)((double)currentInt/CURRENT_DIVISOR);
+}
+
+double Jims_RobotClaw::getRightCurrent()
+{
+  uint32_t value = (uint32_t)getEncoder(CMD_READ_MOTORS_CURRENT);
+  uint16_t currentInt = ((value>>16)&0xFFFF);
+
+  return (double)((double)currentInt/CURRENT_DIVISOR);
+}
+
+
 int32_t Jims_RobotClaw::getEncoder(uint8_t encoder)
 {
   unsigned char msg[] = { mAddress, encoder, 'x', 'x' };

@@ -26,6 +26,9 @@ public:
 
   void setAddress(uint8_t address);
 
+  double getLeftCurrent();
+  double getRightCurrent();
+
 private:
   const uint8_t LOC_COMMAND = 1;
   const uint8_t LOC_SPEED_COMMAND = 2;
@@ -42,6 +45,7 @@ private:
   const uint8_t CMD_READ_MOTOR2_ENCODER = 17;
   const uint8_t CMD_READ_MOTOR1_SPEED = 30;
   const uint8_t CMD_READ_MOTOR2_SPEED = 31;
+  const uint8_t CMD_READ_MOTORS_CURRENT = 49;
 
   const uint8_t CMD_RESET_ENCODERS = 20;
   const uint8_t CMD_SET_MOTOR1_ENCODER = 22;
@@ -49,6 +53,7 @@ private:
 
   const uint8_t CMD_RESPONCE = 0xff;
   const int32_t SPEED_DIVISOR = 300;
+  const double  CURRENT_DIVISOR = 100.0;
 
   uint16_t crc16(uint8_t *packet, uint16_t nBytes);
   bool setSpeed(double speed, uint8_t forward, uint8_t backwards);
