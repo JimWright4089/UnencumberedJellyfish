@@ -5,7 +5,15 @@ int main(void)
   Jims_RobotClaw claw = Jims_RobotClaw("/dev/ttyACM0",38400);
   std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
-  bool results = claw.resetEncoders();
+  bool results = false;
+  int32_t value = 0;
+
+  /////////////////////////////////////////////////////////////////////
+  ////
+  ////   Left Forward
+  ////
+  /////////////////////////////////////////////////////////////////////
+  results = claw.resetEncoders();
   if(false == results)
   {
     printf("Bad reset!!\n");
@@ -18,7 +26,8 @@ int main(void)
 
   for(int i=0;i<5;i++)
   {
-    claw.getLeftEncoder();
+    value = claw.getLeftEncoder();
+    printf("Left Forward 1:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.setLeftEncoder(100);
@@ -28,7 +37,14 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    claw.getLeftEncoder();
+    value = claw.getLeftEncoder();
+    printf("Left Forward 2:%d\n",value);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+  }
+  for(int i=0;i<5;i++)
+  {
+    value = claw.getLeftSpeed();
+    printf("Left Forward speed:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopLeftMotor();
@@ -37,7 +53,11 @@ int main(void)
     printf("Bad!!\n");
   }
 
-
+  /////////////////////////////////////////////////////////////////////
+  ////
+  ////   Right Forward
+  ////
+  /////////////////////////////////////////////////////////////////////
   results = claw.resetEncoders();
   if(false == results)
   {
@@ -51,7 +71,8 @@ int main(void)
 
   for(int i=0;i<5;i++)
   {
-    claw.getRightEncoder();
+    value = claw.getRightEncoder();
+    printf("Right Forward 1:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.setRightEncoder(100);
@@ -61,7 +82,14 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    claw.getRightEncoder();
+    value = claw.getRightEncoder();
+    printf("Right Forward 2:%d\n",value);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+  }
+  for(int i=0;i<5;i++)
+  {
+    value = claw.getRightSpeed();
+    printf("Right Forward Speed:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopRightMotor();
@@ -70,6 +98,11 @@ int main(void)
     printf("Bad!!\n");
   }
 
+  /////////////////////////////////////////////////////////////////////
+  ////
+  ////   Left Reverse
+  ////
+  /////////////////////////////////////////////////////////////////////
   results = claw.resetEncoders();
   if(false == results)
   {
@@ -83,7 +116,8 @@ int main(void)
 
   for(int i=0;i<5;i++)
   {
-    claw.getLeftEncoder();
+    value = claw.getLeftEncoder();
+    printf("Left Reverse 1:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.setLeftEncoder(100);
@@ -93,7 +127,14 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    claw.getLeftEncoder();
+    value = claw.getLeftEncoder();
+    printf("Left Reverse 2:%d\n",value);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+  }
+  for(int i=0;i<5;i++)
+  {
+    value = claw.getLeftSpeed();
+    printf("Left Reverse Speed:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopLeftMotor();
@@ -102,7 +143,11 @@ int main(void)
     printf("Bad!!\n");
   }
 
-
+  /////////////////////////////////////////////////////////////////////
+  ////
+  ////   Right Reverse
+  ////
+  /////////////////////////////////////////////////////////////////////
   results = claw.resetEncoders();
   if(false == results)
   {
@@ -116,7 +161,8 @@ int main(void)
 
   for(int i=0;i<5;i++)
   {
-    claw.getRightEncoder();
+    value = claw.getRightEncoder();
+    printf("Right Reverse 1:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.setRightEncoder(100);
@@ -126,7 +172,14 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    claw.getRightEncoder();
+    value = claw.getRightEncoder();
+    printf("Right Reverse 2:%d\n",value);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+  }
+  for(int i=0;i<5;i++)
+  {
+    value = claw.getRightSpeed();
+    printf("Right Reverse Speed:%d\n",value);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopRightMotor();

@@ -1,14 +1,35 @@
 #include "Jims_RobotClaw.h"
 
+//#define ROBOTCLAW_DEBUG 1
+
 Jims_RobotClaw::Jims_RobotClaw(string portName, uint32_t baud) :
   mSerialPort(portName,baud)
 {
 }
 
+bool Jims_RobotClaw::setLeftMotor(double speed)
+{
+  return(setSpeed(speed,CMD_MOTOR2_FORWARD,CMD_MOTOR2_BACKWARDS));
+}
+
+bool Jims_RobotClaw::setRightMotor(double speed)
+{
+  return(setSpeed(speed,CMD_MOTOR1_FORWARD,CMD_MOTOR1_BACKWARDS));
+}
+
+bool Jims_RobotClaw::stopLeftMotor()
+{
+  return(setLeftMotor(0));
+}
+
+bool Jims_RobotClaw::stopRightMotor()
+{
+  return(setRightMotor(0));
+}
+
 bool Jims_RobotClaw::setSpeed(double speed, uint8_t forward, uint8_t backwards)
 {
-	uint8_t msg[] = { mAddress, forward, 
-                          45, 'x', 'x' };
+	uint8_t msg[] = { mAddress, forward, 45, 'x', 'x' };
   uint8_t readBuffer[1];
 
   if(speed < 0)
@@ -31,29 +52,31 @@ bool Jims_RobotClaw::setSpeed(double speed, uint8_t forward, uint8_t backwards)
     return results;
   }
 
+#ifdef ROBOTCLAW_DEBUG
   printf("byte received: %02x\n",readBuffer[0]);
+#endif
 
   return(CMD_RESPONCE == readBuffer[0]);
 }
 
-bool Jims_RobotClaw::setLeftMotor(double speed)
+int32_t Jims_RobotClaw::getLeftEncoder()
 {
-  return(setSpeed(speed,CMD_MOTOR1_FORWARD,CMD_MOTOR1_BACKWARDS));
+  return getEncoder(CMD_READ_MOTOR2_ENCODER);
 }
 
-bool Jims_RobotClaw::setRightMotor(double speed)
+int32_t Jims_RobotClaw::getRightEncoder()
 {
-  return(setSpeed(speed,CMD_MOTOR2_FORWARD,CMD_MOTOR2_BACKWARDS));
+  return getEncoder(CMD_READ_MOTOR1_ENCODER);
 }
 
-bool Jims_RobotClaw::stopLeftMotor()
+int32_t Jims_RobotClaw::getLeftSpeed()
 {
-  return(setLeftMotor(0));
+  return getEncoder(CMD_READ_MOTOR2_SPEED)/SPEED_DIVISOR;
 }
 
-bool Jims_RobotClaw::stopRightMotor()
+int32_t Jims_RobotClaw::getRightSpeed()
 {
-  return(setRightMotor(0));
+  return getEncoder(CMD_READ_MOTOR1_SPEED)/SPEED_DIVISOR;
 }
 
 int32_t Jims_RobotClaw::getEncoder(uint8_t encoder)
@@ -72,12 +95,14 @@ int32_t Jims_RobotClaw::getEncoder(uint8_t encoder)
     return 0;
   }
 
-  printf("left:");
+#ifdef ROBOTCLAW_DEBUG
+  printf("encoder:");
   for(int i=0;i<7;i++)
   {
     printf("%02x ",readBuffer[i]);
   }
   printf(" ");
+#endif
 
   int32_t encoderValue = 0;
 
@@ -88,19 +113,11 @@ int32_t Jims_RobotClaw::getEncoder(uint8_t encoder)
   encoderValue += readBuffer[2];
   encoderValue = encoderValue << 8;
   encoderValue += readBuffer[3];
+
+#ifdef ROBOTCLAW_DEBUG
   printf("%d\n",encoderValue);
-
+#endif
   return encoderValue;
-}
-
-int32_t Jims_RobotClaw::getLeftEncoder()
-{
-  return getEncoder(CMD_READ_MOTOR1_ENCODER);
-}
-
-int32_t Jims_RobotClaw::getRightEncoder()
-{
-  return getEncoder(CMD_READ_MOTOR1_ENCODER);
 }
 
 bool Jims_RobotClaw::resetEncoders()
@@ -120,7 +137,9 @@ bool Jims_RobotClaw::resetEncoders()
     return 0;
   }
 
+#ifdef ROBOTCLAW_DEBUG
   printf("byte received: %02x\n",readBuffer[0]);
+#endif
 
   return(CMD_RESPONCE == readBuffer[0]);
 
@@ -128,12 +147,12 @@ bool Jims_RobotClaw::resetEncoders()
 
 bool Jims_RobotClaw::setLeftEncoder(int32_t value)
 {
-  return(setEncoder(CMD_SET_MOTOR1_ENCODER,value));
+  return(setEncoder(CMD_SET_MOTOR2_ENCODER,value));
 }
 
 bool Jims_RobotClaw::setRightEncoder(int32_t value)
 {
-  return(setEncoder(CMD_SET_MOTOR2_ENCODER,value));
+  return(setEncoder(CMD_SET_MOTOR1_ENCODER,value));
 }
 
 bool Jims_RobotClaw::setEncoder(uint8_t encoder, int32_t value)
@@ -161,7 +180,9 @@ bool Jims_RobotClaw::setEncoder(uint8_t encoder, int32_t value)
     return 0;
   }
 
+#ifdef ROBOTCLAW_DEBUG
   printf("byte received: %02x\n",readBuffer[0]);
+#endif
 
   return(CMD_RESPONCE == readBuffer[0]);
 }
