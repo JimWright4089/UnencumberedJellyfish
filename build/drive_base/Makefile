@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named drive_base
+
+# Build rule for target.
+drive_base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drive_base
+.PHONY : drive_base
+
+# fast build rule for target.
+drive_base/fast:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/build
+.PHONY : drive_base/fast
+
+#=============================================================================
 # Target rules for targets named drive_base_uninstall
 
 # Build rule for target.
@@ -193,6 +206,114 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/StopWatch.o: src/StopWatch.cpp.o
+
+.PHONY : src/StopWatch.o
+
+# target to build an object file
+src/StopWatch.cpp.o:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/StopWatch.cpp.o
+.PHONY : src/StopWatch.cpp.o
+
+src/StopWatch.i: src/StopWatch.cpp.i
+
+.PHONY : src/StopWatch.i
+
+# target to preprocess a source file
+src/StopWatch.cpp.i:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/StopWatch.cpp.i
+.PHONY : src/StopWatch.cpp.i
+
+src/StopWatch.s: src/StopWatch.cpp.s
+
+.PHONY : src/StopWatch.s
+
+# target to generate assembly for a file
+src/StopWatch.cpp.s:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/StopWatch.cpp.s
+.PHONY : src/StopWatch.cpp.s
+
+src/drive_base.o: src/drive_base.cpp.o
+
+.PHONY : src/drive_base.o
+
+# target to build an object file
+src/drive_base.cpp.o:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/drive_base.cpp.o
+.PHONY : src/drive_base.cpp.o
+
+src/drive_base.i: src/drive_base.cpp.i
+
+.PHONY : src/drive_base.i
+
+# target to preprocess a source file
+src/drive_base.cpp.i:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/drive_base.cpp.i
+.PHONY : src/drive_base.cpp.i
+
+src/drive_base.s: src/drive_base.cpp.s
+
+.PHONY : src/drive_base.s
+
+# target to generate assembly for a file
+src/drive_base.cpp.s:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/drive_base.cpp.s
+.PHONY : src/drive_base.cpp.s
+
+src/robotclaw/Jims_RobotClaw.o: src/robotclaw/Jims_RobotClaw.cpp.o
+
+.PHONY : src/robotclaw/Jims_RobotClaw.o
+
+# target to build an object file
+src/robotclaw/Jims_RobotClaw.cpp.o:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_RobotClaw.cpp.o
+.PHONY : src/robotclaw/Jims_RobotClaw.cpp.o
+
+src/robotclaw/Jims_RobotClaw.i: src/robotclaw/Jims_RobotClaw.cpp.i
+
+.PHONY : src/robotclaw/Jims_RobotClaw.i
+
+# target to preprocess a source file
+src/robotclaw/Jims_RobotClaw.cpp.i:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_RobotClaw.cpp.i
+.PHONY : src/robotclaw/Jims_RobotClaw.cpp.i
+
+src/robotclaw/Jims_RobotClaw.s: src/robotclaw/Jims_RobotClaw.cpp.s
+
+.PHONY : src/robotclaw/Jims_RobotClaw.s
+
+# target to generate assembly for a file
+src/robotclaw/Jims_RobotClaw.cpp.s:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_RobotClaw.cpp.s
+.PHONY : src/robotclaw/Jims_RobotClaw.cpp.s
+
+src/robotclaw/Jims_Serial.o: src/robotclaw/Jims_Serial.cpp.o
+
+.PHONY : src/robotclaw/Jims_Serial.o
+
+# target to build an object file
+src/robotclaw/Jims_Serial.cpp.o:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_Serial.cpp.o
+.PHONY : src/robotclaw/Jims_Serial.cpp.o
+
+src/robotclaw/Jims_Serial.i: src/robotclaw/Jims_Serial.cpp.i
+
+.PHONY : src/robotclaw/Jims_Serial.i
+
+# target to preprocess a source file
+src/robotclaw/Jims_Serial.cpp.i:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_Serial.cpp.i
+.PHONY : src/robotclaw/Jims_Serial.cpp.i
+
+src/robotclaw/Jims_Serial.s: src/robotclaw/Jims_Serial.cpp.s
+
+.PHONY : src/robotclaw/Jims_Serial.s
+
+# target to generate assembly for a file
+src/robotclaw/Jims_Serial.cpp.s:
+	$(MAKE) -f CMakeFiles/drive_base.dir/build.make CMakeFiles/drive_base.dir/src/robotclaw/Jims_Serial.cpp.s
+.PHONY : src/robotclaw/Jims_Serial.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,8 +327,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... drive_base"
 	@echo "... drive_base_uninstall"
 	@echo "... uninstall"
+	@echo "... src/StopWatch.o"
+	@echo "... src/StopWatch.i"
+	@echo "... src/StopWatch.s"
+	@echo "... src/drive_base.o"
+	@echo "... src/drive_base.i"
+	@echo "... src/drive_base.s"
+	@echo "... src/robotclaw/Jims_RobotClaw.o"
+	@echo "... src/robotclaw/Jims_RobotClaw.i"
+	@echo "... src/robotclaw/Jims_RobotClaw.s"
+	@echo "... src/robotclaw/Jims_Serial.o"
+	@echo "... src/robotclaw/Jims_Serial.i"
+	@echo "... src/robotclaw/Jims_Serial.s"
 .PHONY : help
 
 

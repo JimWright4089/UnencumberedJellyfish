@@ -24,21 +24,31 @@
 //----------------------------------------------------------------------------
 //  Includes
 //----------------------------------------------------------------------------
+#include "Jims_RobotClaw.h"
+#include "StopWatch.h"
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 
 //----------------------------------------------------------------------------
 //  Namespace
 //----------------------------------------------------------------------------
-namespace unencumbered_jellyfish
+class DriveBase : public rclcpp::Node
 {
-  class drive_base : public rclcpp::Node
-  {
-    public:
-      explicit drive_base();
-      virtual ~drive_base() {}
+  public:
+    explicit DriveBase();
+    virtual ~DriveBase() {}
 
-    private:
-  };
-}
+  private:
+    void timerCallback();
+    int mCount = 0; 
+    double mLeft = 0.0;
+    double mRight = 0.0;
+    StopWatch mMotorWatchdog = StopWatch(500);
+    rclcpp::TimerBase::SharedPtr mTimer;
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr mTwistSub;
+    void twistCallBack(const geometry_msgs::msg::Twist::SharedPtr msg);
+
+    Jims_RobotClaw mRobotClaw = Jims_RobotClaw("/dev/ttyACM0",38400);
+
+};
 #endif

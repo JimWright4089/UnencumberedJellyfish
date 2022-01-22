@@ -22,34 +22,46 @@
 //----------------------------------------------------------------------------
 //  Includes
 //----------------------------------------------------------------------------
-#include "drive_date.hpp"
+#include "drive_base.h"
 
-
-class MinimalPublisher : public rclcpp::Node
+DriveBase::DriveBase()
+  : Node("drive_base")
 {
-public:
-  MinimalPublisher()
-  : Node("drive_base"), count_(0)
-  {
-    publisher_ = this->create_publisher<std_msgs::msg::Float64>("sinValue", 10);
-    timer_ = this->create_wall_timer(50ms, std::bind(&MinimalPublisher::timer_callback, this));
-  }
+//    publisher_ = this->create_publisher<std_msgs::msg::Float64>("sinValue", 10);
+  mTwistSub = this->create_subscription<geometry_msgs::msg::Twist>(
+      "/cmd_vel", 10, std::bind(&DriveBase::twistCallBack, this, std::placeholders::_1));
+//      "/cmd_vel", 10, std::bind(&DriveBase::twistCallBack, this, 10));
+  mTimer = this->create_wall_timer(20ms, std::bind(&DriveBase::timerCallback, this));
+}
 
-private:
-  double mCount = 0.0; 
-  void timer_callback()
+void DriveBase::timerCallback()
+{
+  if(mMotorWatchdog.IsExpired())
   {
-    double sinValue = sin(mCount);
-    mCount += (3.1415927 / 200); 
-    auto message = std_msgs::msg::Float64();
-    message.data = sinValue;
-    RCLCPP_INFO(this->get_logger(), "%7.4f", message.data);
-    publisher_->publish(message);
+    mRobotClaw.setLeftMotor(0);
+    mRobotClaw.setRightMotor(0);
   }
-  rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_;
-  size_t count_;
-};
+  else
+  {
+    mRobotClaw.setLeftMotor(mLeft);
+    mRobotClaw.setRightMotor(mRight);
+  }
+}
+
+void DriveBase::twistCallBack(const geometry_msgs::msg::Twist::SharedPtr msg)
+{
+
+  printf("DriveBase::twistCallBack\n");
+  mLeft = msg->linear.x - msg->angular.z;
+  mRight = msg->linear.x - msg->angular.z;
+
+  if(mLeft > 1.0) mLeft = 1.0;
+  if(mRight > 1.0) mRight = 1.0;
+  if(mLeft < -1.0) mLeft = -1.0;
+  if(mRight < -1.0) mRight = -1.0;
+
+  mMotorWatchdog.Reset();
+}
 
 //--------------------------------------------------------------------
 // Purpose:
@@ -61,7 +73,7 @@ private:
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MinimalPublisher>());
+  rclcpp::spin(std::make_shared<DriveBase>());
   rclcpp::shutdown();
   return 0;
 }
