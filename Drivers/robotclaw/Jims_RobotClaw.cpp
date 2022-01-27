@@ -5,6 +5,7 @@
 Jims_RobotClaw::Jims_RobotClaw(string portName, uint32_t baud) :
   mSerialPort(portName,baud)
 {
+  mWheelCirc = mWheelDiameter * 3.14159;
 }
 
 bool Jims_RobotClaw::setLeftMotor(double speed)
@@ -69,14 +70,14 @@ int32_t Jims_RobotClaw::getRightEncoder()
   return getEncoder(CMD_READ_MOTOR1_ENCODER);
 }
 
-int32_t Jims_RobotClaw::getLeftSpeed()
+double Jims_RobotClaw::getLeftSpeed()
 {
-  return getEncoder(CMD_READ_MOTOR2_SPEED)/SPEED_DIVISOR;
+  return ((double)getEncoder(CMD_READ_MOTOR2_SPEED)/mTicksPerRev)*mWheelCirc;
 }
 
-int32_t Jims_RobotClaw::getRightSpeed()
+double Jims_RobotClaw::getRightSpeed()
 {
-  return getEncoder(CMD_READ_MOTOR1_SPEED)/SPEED_DIVISOR;
+  return ((double)getEncoder(CMD_READ_MOTOR1_SPEED)/mTicksPerRev)*mWheelCirc;
 }
 
 double Jims_RobotClaw::getLeftCurrent()

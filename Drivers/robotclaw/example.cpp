@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  Jims_RobotClaw claw = Jims_RobotClaw("/dev/ttyACM0",38400);
+  Jims_RobotClaw claw = Jims_RobotClaw("/dev/ttyACM0",39200);
   std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
   bool results = false;
@@ -43,10 +43,10 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    value = claw.getLeftSpeed();
+    double speed = claw.getLeftSpeed();
     double dvaluer = claw.getRightCurrent();
     double dvaluel = claw.getLeftCurrent();
-    printf("Left Forward speed:%d %f %f\n",value,dvaluel,dvaluer);
+    printf("Left Forward speed:%f %f %f\n",speed,dvaluel,dvaluer);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopLeftMotor();
@@ -90,10 +90,10 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    value = claw.getRightSpeed();
+    double speed = claw.getRightSpeed();
     double dvaluer = claw.getRightCurrent();
     double dvaluel = claw.getLeftCurrent();
-    printf("Right Forward Speed:%d %f %f\n",value,dvaluer,dvaluel);
+    printf("Right Forward Speed:%f %f %f\n",speed,dvaluer,dvaluel);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopRightMotor();
@@ -112,7 +112,7 @@ int main(void)
   {
     printf("Bad reset!!\n");
   }
-  results = claw.setLeftMotor(-.5);
+  results = claw.setLeftMotor(-1.0);
   if(false == results)
   {
     printf("Bad set Motor!!\n");
@@ -137,9 +137,9 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    value = claw.getLeftSpeed();
+    double speed = claw.getLeftSpeed();
     double dvalue = claw.getLeftCurrent();
-    printf("Left Reverse Speed:%d %f\n",value,dvalue);
+    printf("Left Reverse Speed:%f %f\n",speed,dvalue);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopLeftMotor();
@@ -158,7 +158,7 @@ int main(void)
   {
     printf("Bad reset!!\n");
   }
-  results = claw.setRightMotor(-.5);
+  results = claw.setRightMotor(-1.0);
   if(false == results)
   {
     printf("Bad set Motor!!\n");
@@ -183,9 +183,9 @@ int main(void)
   }
   for(int i=0;i<5;i++)
   {
-    value = claw.getRightSpeed();
+    double speed = claw.getRightSpeed();
     double dvalue = claw.getRightCurrent();
-    printf("Right Reverse Speed:%d %f\n",value,dvalue);
+    printf("Right Reverse Speed:%f %f\n",speed,dvalue);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
   results = claw.stopRightMotor();
