@@ -2,6 +2,10 @@
 
 //#define SERIAL_DEBUG 1
 
+Jims_Serial::Jims_Serial(){
+  openPort();
+}
+
 Jims_Serial::Jims_Serial(string portName) :
  mPortName(portName)
 {
@@ -17,6 +21,11 @@ Jims_Serial::Jims_Serial(string portName, uint32_t baud) :
 
 void Jims_Serial::openPort()
 {
+  if(0 != mPort)
+  {
+    close(mPort);
+  }
+
   mPort = open(mPortName.c_str(), O_RDWR );
   if (mPort == -1)
   {

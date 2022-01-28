@@ -30,6 +30,7 @@ const int WAIT_TIME = 1;
 
 class Jims_Serial {
 public:
+  Jims_Serial();
   Jims_Serial(string portName);
   Jims_Serial(string portName, uint32_t baud);
   void end(void);
@@ -45,7 +46,7 @@ private:
 
   void openPort();
 
-  string mPortName;
+  string mPortName = "/dev/ttyACM0";
   int mPort = 0;
   uint32_t mBaud = 115200;
   bool mBegun;

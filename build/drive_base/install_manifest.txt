@@ -1,4 +1,5 @@
 /home/ubuntu/UnencumberedJellyfish/install/drive_base/lib/drive_base/drive_base
+/home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/launch/drive_base.py
 /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/package_run_dependencies/drive_base
 /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/ament_index/resource_index/parent_prefix_path/drive_base
 /home/ubuntu/UnencumberedJellyfish/install/drive_base/share/drive_base/environment/ament_prefix_path.sh

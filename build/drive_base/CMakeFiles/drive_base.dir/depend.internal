@@ -17,11 +17,29 @@ CMakeFiles/drive_base.dir/src/drive_base.cpp.o
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__builder.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/transform__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/transform__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/transform_stamped__builder.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/transform_stamped__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/transform_stamped__traits.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__builder.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/pose.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/transform_stamped.hpp
  /opt/ros/foxy/include/geometry_msgs/msg/twist.hpp
  /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
  /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
@@ -33,6 +51,10 @@ CMakeFiles/drive_base.dir/src/drive_base.cpp.o
  /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp
  /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
  /opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp
+ /opt/ros/foxy/include/nav_msgs/msg/detail/odometry__builder.hpp
+ /opt/ros/foxy/include/nav_msgs/msg/detail/odometry__struct.hpp
+ /opt/ros/foxy/include/nav_msgs/msg/detail/odometry__traits.hpp
+ /opt/ros/foxy/include/nav_msgs/msg/odometry.hpp
  /opt/ros/foxy/include/rcl/allocator.h
  /opt/ros/foxy/include/rcl/arguments.h
  /opt/ros/foxy/include/rcl/client.h
@@ -286,11 +308,29 @@ CMakeFiles/drive_base.dir/src/drive_base.cpp.o
  /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp
  /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
+ /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
+ /opt/ros/foxy/include/tf2/LinearMath/MinMax.h
+ /opt/ros/foxy/include/tf2/LinearMath/QuadWord.h
+ /opt/ros/foxy/include/tf2/LinearMath/Quaternion.h
+ /opt/ros/foxy/include/tf2/LinearMath/Scalar.h
+ /opt/ros/foxy/include/tf2/LinearMath/Vector3.h
+ /opt/ros/foxy/include/tf2/visibility_control.h
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__builder.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__traits.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/tf_message.hpp
+ /opt/ros/foxy/include/tf2_ros/qos.hpp
+ /opt/ros/foxy/include/tf2_ros/transform_broadcaster.h
+ /opt/ros/foxy/include/tf2_ros/visibility_control.h
  /opt/ros/foxy/include/tracetools/config.h
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp
  /opt/ros/foxy/include/tracetools/visibility_control.hpp
 CMakeFiles/drive_base.dir/src/robotclaw/Jims_RobotClaw.cpp.o
+ /home/ubuntu/UnencumberedJellyfish/Code/drive_base/include/robotclaw/Jims_RobotClaw.h
+ /home/ubuntu/UnencumberedJellyfish/Code/drive_base/include/robotclaw/Jims_Serial.h
  /home/ubuntu/UnencumberedJellyfish/Code/drive_base/src/robotclaw/Jims_RobotClaw.cpp
 CMakeFiles/drive_base.dir/src/robotclaw/Jims_Serial.cpp.o
+ /home/ubuntu/UnencumberedJellyfish/Code/drive_base/include/robotclaw/Jims_Serial.h
  /home/ubuntu/UnencumberedJellyfish/Code/drive_base/src/robotclaw/Jims_Serial.cpp

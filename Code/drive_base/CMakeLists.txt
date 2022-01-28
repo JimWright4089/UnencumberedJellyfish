@@ -25,26 +25,22 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 add_executable(drive_base src/drive_base.cpp 
     src/StopWatch.cpp
     src/robotclaw/Jims_RobotClaw.cpp 
     src/robotclaw/Jims_Serial.cpp)
-ament_target_dependencies(drive_base rclcpp std_msgs geometry_msgs)
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # uncomment the line when a copyright and license is not present in all source files
-  #set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # uncomment the line when this package is not in a git repo
-  #set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+ament_target_dependencies(drive_base rclcpp std_msgs geometry_msgs nav_msgs tf2_ros)
 
 install(TARGETS
   drive_base
   DESTINATION lib/${PROJECT_NAME})
+
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()

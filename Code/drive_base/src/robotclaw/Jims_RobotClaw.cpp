@@ -1,10 +1,46 @@
 #include "Jims_RobotClaw.h"
+#include <math.h>
 
 //#define ROBOTCLAW_DEBUG 1
+
+Jims_RobotClaw::Jims_RobotClaw()
+{
+  mWheelCirc = mWheelDiameter * M_PI;
+}
 
 Jims_RobotClaw::Jims_RobotClaw(string portName, uint32_t baud) :
   mSerialPort(portName,baud)
 {
+  mWheelCirc = mWheelDiameter * M_PI;
+}
+
+Jims_RobotClaw& Jims_RobotClaw::operator=( const Jims_RobotClaw& other )
+{
+  mSerialPort = other.mSerialPort;
+  mAddress = other.mAddress;
+
+  mWheelDiameter = other.mWheelDiameter;
+  mWheelCirc = other.mWheelCirc;
+  mTicksPerRev = other.mTicksPerRev;
+  mMaxSpeed = other.mMaxSpeed;
+
+  return *this;
+}
+
+void Jims_RobotClaw::setWheelDiameter(double wheelDiameter)
+{
+  mWheelDiameter = wheelDiameter;
+  mWheelCirc = mWheelDiameter * M_PI;
+}
+
+void Jims_RobotClaw::setTicksPerRev(double ticksPerRev)
+{
+  mTicksPerRev = ticksPerRev;
+}
+
+void Jims_RobotClaw::setMaxSpeed(double maxSpeed)
+{
+  mMaxSpeed = maxSpeed;
 }
 
 bool Jims_RobotClaw::setLeftMotor(double speed)
@@ -69,14 +105,24 @@ int32_t Jims_RobotClaw::getRightEncoder()
   return getEncoder(CMD_READ_MOTOR1_ENCODER);
 }
 
-int32_t Jims_RobotClaw::getLeftSpeed()
+double Jims_RobotClaw::getLeftSpeed()
 {
-  return getEncoder(CMD_READ_MOTOR2_SPEED)/SPEED_DIVISOR;
+  return ((double)getEncoder(CMD_READ_MOTOR2_SPEED)/mTicksPerRev)*mWheelCirc;
 }
 
-int32_t Jims_RobotClaw::getRightSpeed()
+double Jims_RobotClaw::getRightSpeed()
 {
-  return getEncoder(CMD_READ_MOTOR1_SPEED)/SPEED_DIVISOR;
+  return ((double)getEncoder(CMD_READ_MOTOR1_SPEED)/mTicksPerRev)*mWheelCirc;
+}
+
+double Jims_RobotClaw::getLeftSpeedAsRad()
+{
+  return ((double)getEncoder(CMD_READ_MOTOR1_SPEED)/mTicksPerRev)*RAD_IN_ROTATION;
+}
+
+double Jims_RobotClaw::getRightSpeedAsRad()
+{
+  return ((double)getEncoder(CMD_READ_MOTOR2_SPEED)/mTicksPerRev)*RAD_IN_ROTATION;
 }
 
 double Jims_RobotClaw::getLeftCurrent()

@@ -5,7 +5,14 @@
 
 class Jims_RobotClaw {
 public:
+  Jims_RobotClaw();
   Jims_RobotClaw(string portName, uint32_t baud);
+
+  Jims_RobotClaw& operator=( const Jims_RobotClaw& other );
+
+  void setWheelDiameter(double wheelDiameter);
+  void setTicksPerRev(double ticksPerRev);
+  void setMaxSpeed(double maxSpeed);
 
   bool setLeftMotor(double speed);
   bool setRightMotor(double speed);
@@ -17,8 +24,10 @@ public:
 
   int32_t getLeftEncoder();
   int32_t getRightEncoder();
-  int32_t getLeftSpeed();
-  int32_t getRightSpeed();
+  double getLeftSpeed();
+  double getRightSpeed();
+  double getLeftSpeedAsRad();
+  double getRightSpeedAsRad();
 
   bool resetEncoders();
   bool setLeftEncoder(int32_t value);
@@ -43,8 +52,10 @@ private:
   const uint8_t CMD_MOTORS_BACKWARDS = 9;
   const uint8_t CMD_READ_MOTOR1_ENCODER = 16;
   const uint8_t CMD_READ_MOTOR2_ENCODER = 17;
-  const uint8_t CMD_READ_MOTOR1_SPEED = 30;
-  const uint8_t CMD_READ_MOTOR2_SPEED = 31;
+  const uint8_t CMD_READ_MOTOR1_SPEED = 18;
+  const uint8_t CMD_READ_MOTOR2_SPEED = 19;
+  const uint8_t CMD_READ_MOTOR1_RAW_SPEED = 30;
+  const uint8_t CMD_READ_MOTOR2_RAW_SPEED = 31;
   const uint8_t CMD_READ_MOTORS_CURRENT = 49;
 
   const uint8_t CMD_RESET_ENCODERS = 20;
@@ -55,6 +66,8 @@ private:
   const int32_t SPEED_DIVISOR = 300;
   const double  CURRENT_DIVISOR = 100.0;
 
+  const double  RAD_IN_ROTATION = 6.28319;
+
   uint16_t crc16(uint8_t *packet, uint16_t nBytes);
   bool setSpeed(double speed, uint8_t forward, uint8_t backwards);
   int32_t getEncoder(uint8_t encoder);
@@ -63,6 +76,10 @@ private:
   Jims_Serial mSerialPort;
   uint8_t mAddress = 128;
 
+  double mWheelDiameter = 120.0;
+  double mWheelCirc = 0;
+  double mTicksPerRev = 537.7;
+  double mMaxSpeed = 1800.0;
 };
 
 #endif
