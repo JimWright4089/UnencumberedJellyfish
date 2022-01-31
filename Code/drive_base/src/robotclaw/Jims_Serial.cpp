@@ -21,11 +21,6 @@ Jims_Serial::Jims_Serial(string portName, uint32_t baud) :
 
 void Jims_Serial::openPort()
 {
-  if(0 != mPort)
-  {
-    close(mPort);
-  }
-
   mPort = open(mPortName.c_str(), O_RDWR );
   if (mPort == -1)
   {

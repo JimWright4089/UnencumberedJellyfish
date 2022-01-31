@@ -24,6 +24,7 @@
 //----------------------------------------------------------------------------
 #include "drive_base.h"
 #include <tf2/LinearMath/Quaternion.h>
+#include <math.h>
 
 DriveBase::DriveBase()
   : Node("drive_base")
@@ -58,11 +59,10 @@ DriveBase::DriveBase()
   mPose.position.x = 0;
   mPose.position.y = 0;
   mPose.orientation.z = 0; 
+  mLengthOfWheel = mWheelDiameter * M_PI;
+  mRadPerMeter = (1000.0 / mLengthOfWheel) * (2*M_PI);
 
   mRobotClaw = Jims_RobotClaw(mSerialPort.c_str(),mBaud);
-  mRobotClaw.setWheelDiameter(mWheelDiameter);
-  mRobotClaw.setTicksPerRev(mEncoderTicks);
-  mRobotClaw.setMaxSpeed(mMaxVelocity);
 
   auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
   mOdomEncoderPub = this->create_publisher<nav_msgs::msg::Odometry>("odom", qos);
@@ -71,10 +71,22 @@ DriveBase::DriveBase()
   mTwistSub = this->create_subscription<geometry_msgs::msg::Twist>(
       "/cmd_vel", 10, std::bind(&DriveBase::twistCallBack, this, std::placeholders::_1));
   mTimer = this->create_wall_timer(20ms, std::bind(&DriveBase::timerCallback, this));
+
+  mRobotClaw.resetEncoders();
 }
+
+DriveBase::~DriveBase()
+{
+  mRobotClaw.setLeftSpeed(0);
+  mRobotClaw.setRightSpeed(0);
+}
+
 
 void DriveBase::timerCallback()
 {
+  mRobotClaw.setLeftSpeed(500);
+  mRobotClaw.setRightSpeed(500);
+/*
   if(mMotorWatchdog.IsExpired())
   {
     mRobotClaw.setLeftMotor(0);
@@ -82,9 +94,10 @@ void DriveBase::timerCallback()
   }
   else
   {
-    mRobotClaw.setLeftMotor(mLeft);
-    mRobotClaw.setRightMotor(mRight);
+    mRobotClaw.setLeftSpeed(mLeft);
+    mRobotClaw.setRightSpeed(mRight);
   }
+*/  
   publishOdometry();
 }
 
@@ -98,6 +111,9 @@ void DriveBase::twistCallBack(const geometry_msgs::msg::Twist::SharedPtr msg)
   if(mLeft < -1.0) mLeft = -1.0;
   if(mRight < -1.0) mRight = -1.0;
 
+  mLeft *= mMaxVelocity;
+  mRight *= mMaxVelocity;
+
   mMotorWatchdog.Reset();
 }
 
@@ -105,6 +121,7 @@ void DriveBase::publishOdometry()
 {  // convert encoder readings to real world values and publish as Odometry
   static double previousTime = 0;
   double deltaTime = 0;
+  static int count = 0;
 
   rclcpp::Time theTime = this->now();
   double currentTime = (double)theTime.nanoseconds()/(double)1000000000;
@@ -116,53 +133,49 @@ void DriveBase::publishOdometry()
     return;
   }
 
-  // rotation value of wheel [rad]
-//  double leftWheelRad = mRobotClaw.getLeftSpeedAsRad();
-//  double rightWheelRad = mRobotClaw.getRightSpeedAsRad();
-  double leftWheelRad = 3.1415;
-  double rightWheelRad = 3.1415;
+  double leftWheelEncoder = mRobotClaw.getLeftEncoder();
+  double rightWheelEncoder = mRobotClaw.getRightEncoder();
 
-  double delta_s = 0.0;
-  double delta_theta = 0.0;
+  static double prevLeftWheelEncoder = 0.0;
+  static double prevRightWheelEncoder = 0.0;
 
-  double theta = 0.0;
-  static double last_theta = 0.0;
+//  double leftWheelEncoder = prevLeftWheelEncoder+28.52661133;
+//  double rightWheelEncoder = prevRightWheelEncoder+28.52661133;
 
-  if (std::isnan(leftWheelRad)) 
-  {
-    leftWheelRad = 0.0;
-  }
+  
+  double deltaLeftWheelEncoderDist = 
+        ((leftWheelEncoder-prevLeftWheelEncoder)/mEncoderTicks)*mLengthOfWheel;
+  double deltaRightWheelEncoderDist = 
+        ((rightWheelEncoder-prevRightWheelEncoder)/mEncoderTicks)*mLengthOfWheel;
+/*  
+  printf("le:%f ple:%f et:%f lw:%f dd:%f\n",
+        leftWheelEncoder,
+        prevLeftWheelEncoder,
+        mEncoderTicks,
+        mLengthOfWheel,
+        deltaLeftWheelEncoderDist);
+*/
 
-  if (std::isnan(rightWheelRad)) 
-  {
-    rightWheelRad = 0.0;
-  }
+  double velNet = (deltaRightWheelEncoderDist+deltaLeftWheelEncoderDist)/2;
+  double velDiff = deltaRightWheelEncoderDist-deltaLeftWheelEncoderDist;
 
-  delta_s = (mWheelDiameter/2) * (rightWheelRad + leftWheelRad) / 2.0;
-  theta = (mWheelDiameter/2) * (rightWheelRad - leftWheelRad) / mDistBetweenWheels;
-  delta_theta = theta;
+  mPose.position.x += (velNet * cos(mPose.orientation.z));
+  mPose.position.y += (velNet * sin(mPose.orientation.z));
+  
+  double alpha = velDiff*mTraction*mRadPerMeter;
+  mPose.orientation.z += alpha*deltaTime;
 
-  // compute odometric pose
-  mPose.position.x += delta_s * cos(mPose.orientation.z + (delta_theta / 2.0));
-  mPose.position.y += delta_s * sin(mPose.orientation.z + (delta_theta / 2.0));
-  mPose.orientation.z += delta_theta;
+  prevLeftWheelEncoder = leftWheelEncoder;
+  prevRightWheelEncoder = rightWheelEncoder;
 
-  RCLCPP_INFO(this->get_logger(), "x : %f, y : %f theta : %f", 
+  RCLCPP_INFO(this->get_logger(), "%d x : %f, y : %f theta : %f", 
+        count,
         mPose.position.x, 
         mPose.position.y,
         mPose.orientation.z);
-
-  // compute odometric instantaneouse velocity
-  double translationalVelocity = delta_s / deltaTime;
-  double rotationalVelocity = delta_theta / deltaTime;
-
-  last_theta = theta;
+  count++;
 
   auto odom_msg = std::make_unique<nav_msgs::msg::Odometry>();
-
-  odom_msg->header.frame_id = "odom";
-  odom_msg->child_frame_id = "base_link";
-//  odom_msg->header.stamp = this->get_clock().now();
 
   odom_msg->pose.pose.position.x = mPose.position.x;
   odom_msg->pose.pose.position.y = mPose.position.y;
@@ -176,8 +189,8 @@ void DriveBase::publishOdometry()
   odom_msg->pose.pose.orientation.z = q.z();
   odom_msg->pose.pose.orientation.w = q.w();
 
-  odom_msg->twist.twist.linear.x = translationalVelocity;
-  odom_msg->twist.twist.angular.z = rotationalVelocity;
+//  odom_msg->twist.twist.linear.x = translationalVelocity;
+//  odom_msg->twist.twist.angular.z = rotationalVelocity;
 
   geometry_msgs::msg::TransformStamped odomTransform;
 

@@ -14,7 +14,7 @@ def generate_launch_description():
                 {"baud": 38400},
                 {"wheel_diameter": 120.0},
                 {"encoder_ticks": 537.7},
-                {"max_velocity": 1800.0},
+                {"max_velocity": 2500.0},
                 {"dist_between_wheels": 457.2},
                 {"publish_transform": True}
             ]

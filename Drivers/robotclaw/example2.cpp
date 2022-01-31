@@ -8,7 +8,7 @@ int main(void)
   bool results = false;
   int32_t value = 0;
 
-  int32_t speed = 1900;
+  int32_t speed = 500;
 
   /////////////////////////////////////////////////////////////////////
   ////

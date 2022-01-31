@@ -46,7 +46,7 @@ private:
 
   void openPort();
 
-  string mPortName = "/dev/ttyACM0";
+  string mPortName;
   int mPort = 0;
   uint32_t mBaud = 115200;
   bool mBegun;

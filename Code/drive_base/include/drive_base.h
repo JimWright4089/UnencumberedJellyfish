@@ -39,7 +39,7 @@ class DriveBase : public rclcpp::Node
 {
   public:
     explicit DriveBase();
-    virtual ~DriveBase() {}
+    ~DriveBase();
 
   private:
     int mCount = 0; 
@@ -52,6 +52,9 @@ class DriveBase : public rclcpp::Node
     double   mEncoderTicks = 0.0;
     double   mMaxVelocity = 0.0;
     double   mDistBetweenWheels = 0.0;
+    double   mLengthOfWheel = 0.0;
+    double   mRadPerMeter = 4.17;
+    double   mTraction = 0.99;
     bool     mPublishTransform = false;
     geometry_msgs::msg::Pose mPose;
 

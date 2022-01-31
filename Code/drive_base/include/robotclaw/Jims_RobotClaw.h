@@ -10,13 +10,11 @@ public:
 
   Jims_RobotClaw& operator=( const Jims_RobotClaw& other );
 
-  void setWheelDiameter(double wheelDiameter);
-  void setTicksPerRev(double ticksPerRev);
-  void setMaxSpeed(double maxSpeed);
-
   bool setLeftMotor(double speed);
   bool setRightMotor(double speed);
   bool setMotors(double speed);
+  bool setLeftSpeed(int32_t speed);
+  bool setRightSpeed(int32_t speed);
 
   bool stopLeftMotor();
   bool stopRightMotor();
@@ -24,10 +22,6 @@ public:
 
   int32_t getLeftEncoder();
   int32_t getRightEncoder();
-  double getLeftSpeed();
-  double getRightSpeed();
-  double getLeftSpeedAsRad();
-  double getRightSpeedAsRad();
 
   bool resetEncoders();
   bool setLeftEncoder(int32_t value);
@@ -50,6 +44,10 @@ private:
   const uint8_t CMD_MOTOR2_BACKWARDS = 5;
   const uint8_t CMD_MOTORS_FORWARD = 8;
   const uint8_t CMD_MOTORS_BACKWARDS = 9;
+
+  const uint8_t CMD_MOTOR1_SPEED = 35;
+  const uint8_t CMD_MOTOR2_SPEED = 36;
+
   const uint8_t CMD_READ_MOTOR1_ENCODER = 16;
   const uint8_t CMD_READ_MOTOR2_ENCODER = 17;
   const uint8_t CMD_READ_MOTOR1_SPEED = 18;
@@ -66,8 +64,6 @@ private:
   const int32_t SPEED_DIVISOR = 300;
   const double  CURRENT_DIVISOR = 100.0;
 
-  const double  RAD_IN_ROTATION = 6.28319;
-
   uint16_t crc16(uint8_t *packet, uint16_t nBytes);
   bool setSpeed(double speed, uint8_t forward, uint8_t backwards);
   int32_t getEncoder(uint8_t encoder);
@@ -75,11 +71,6 @@ private:
 
   Jims_Serial mSerialPort;
   uint8_t mAddress = 128;
-
-  double mWheelDiameter = 120.0;
-  double mWheelCirc = 0;
-  double mTicksPerRev = 537.7;
-  double mMaxSpeed = 1800.0;
 };
 
 #endif
