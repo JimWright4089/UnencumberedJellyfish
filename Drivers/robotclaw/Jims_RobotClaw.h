@@ -10,6 +10,8 @@ public:
   bool setLeftMotor(double speed);
   bool setRightMotor(double speed);
   bool setMotors(double speed);
+  bool setLeftSpeed(int32_t speed);
+  bool setRightSpeed(int32_t speed);
 
   bool stopLeftMotor();
   bool stopRightMotor();
@@ -41,6 +43,10 @@ private:
   const uint8_t CMD_MOTOR2_BACKWARDS = 5;
   const uint8_t CMD_MOTORS_FORWARD = 8;
   const uint8_t CMD_MOTORS_BACKWARDS = 9;
+
+  const uint8_t CMD_MOTOR1_SPEED = 35;
+  const uint8_t CMD_MOTOR2_SPEED = 36;
+
   const uint8_t CMD_READ_MOTOR1_ENCODER = 16;
   const uint8_t CMD_READ_MOTOR2_ENCODER = 17;
   const uint8_t CMD_READ_MOTOR1_SPEED = 18;

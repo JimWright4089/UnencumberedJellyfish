@@ -28,6 +28,17 @@ bool Jims_RobotClaw::stopRightMotor()
   return(setRightMotor(0));
 }
 
+bool Jims_RobotClaw::setLeftSpeed(int32_t speed)
+{
+  return setEncoder(CMD_MOTOR2_SPEED, speed);
+}
+
+bool Jims_RobotClaw::setRightSpeed(int32_t speed)
+{
+  return setEncoder(CMD_MOTOR1_SPEED, speed);
+}
+
+
 bool Jims_RobotClaw::setSpeed(double speed, uint8_t forward, uint8_t backwards)
 {
 	uint8_t msg[] = { mAddress, forward, 45, 'x', 'x' };
